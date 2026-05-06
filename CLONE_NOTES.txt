@@ -1,0 +1,12 @@
+zhengdarack www static frontend mirror
+Source: https://www.hammerheadllc.com/
+Pages fetched: 87
+Assets referenced: 331
+Page fetch failures: 1
+Asset fetch failures: 0
+
+Serve from this directory with:
+python3 -m http.server 4173
+Then open http://127.0.0.1:4173/
+
+Third-party analytics/HubSpot embed scripts were removed/replaced with static forms where matched. The Leaflet map remains a frontend-only external dependency when viewed online.

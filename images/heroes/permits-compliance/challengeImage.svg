@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" role="img" aria-label="Chart comparing permit timelines: Standard Process takes 6 to 10 weeks, With zhengdarack takes 3 to 5 weeks, which is 40 to 60 percent faster.">
+  <title>Permit Approval Timeline Comparison</title>
+  <desc>A horizontal bar chart comparing permit approval timelines. Standard process takes 6-10 weeks, while working with zhengdarack reduces this to 3-5 weeks, a 40-60% improvement.</desc>
+
+  <!-- Background -->
+  <rect width="700" height="600" fill="#f8fafb" rx="0"/>
+
+  <!-- Title -->
+  <text x="50" y="100" fill="#1F2A32" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="23" font-weight="700">Permit Approval Timeline</text>
+  <text x="50" y="128" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="13">Weeks from submission to permit issuance</text>
+
+  <!-- Vertical grid lines -->
+  <line x1="50" y1="165" x2="50" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+  <line x1="150" y1="165" x2="150" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+  <line x1="250" y1="165" x2="250" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+  <line x1="350" y1="165" x2="350" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+  <line x1="450" y1="165" x2="450" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+  <line x1="550" y1="165" x2="550" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+  <line x1="650" y1="165" x2="650" y2="420" stroke="#E6ECEF" stroke-width="1"/>
+
+  <!-- Week axis labels (0-12 weeks, 50px per week) -->
+  <text x="50" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">0</text>
+  <text x="150" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">2</text>
+  <text x="250" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">4</text>
+  <text x="350" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">6</text>
+  <text x="450" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">8</text>
+  <text x="550" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">10</text>
+  <text x="650" y="445" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">12</text>
+  <text x="350" y="465" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11">WEEKS</text>
+
+  <!-- Row 1: Standard Process -->
+  <text x="50" y="192" fill="#1F2A32" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">Standard Process</text>
+  <rect x="50" y="202" width="500" height="52" rx="5" fill="#2F4A5A"/>
+  <text x="538" y="234" text-anchor="end" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">6–10 weeks</text>
+
+  <!-- Row 2: With zhengdarack -->
+  <text x="50" y="322" fill="#F26B1D" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="14" font-weight="600">With zhengdarack</text>
+  <rect x="50" y="332" width="225" height="52" rx="5" fill="#F26B1D"/>
+  <text x="263" y="364" text-anchor="end" fill="#ffffff" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="15" font-weight="700">3–5 weeks</text>
+
+  <!-- 40-60% Faster badge -->
+  <rect x="295" y="338" width="160" height="40" rx="6" fill="#FFF5F0" stroke="#F26B1D" stroke-width="1.5"/>
+  <text x="375" y="358" text-anchor="middle" fill="#F26B1D" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="12" font-weight="700">40–60% FASTER</text>
+  <text x="375" y="372" text-anchor="middle" fill="#F26B1D" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="9" font-weight="500" opacity="0.8">approvals</text>
+
+  <!-- Note about corrections -->
+  <text x="50" y="500" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="11" opacity="0.8">* Standard submissions may require 2–4 additional weeks for corrections.</text>
+
+  <!-- Source -->
+  <text x="350" y="560" text-anchor="middle" fill="#5E7482" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="10" opacity="0.6">Based on typical zhengdarack project experience</text>
+</svg>
