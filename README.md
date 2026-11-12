@@ -1,6 +1,6 @@
-# zhengdarack Static Frontend Mirror
+# zheng Static Frontend 
 
-Source: https://www.hammerheadllc.com/
+
 
 This directory is a local static mirror of the current `www` site frontend.
 
