@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.zhengdarack.com/sitemap.xml
+
+Sitemap: https://zhengdarack.com/sitemap-racking-guides.xml
