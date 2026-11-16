@@ -43,4 +43,4 @@ before each deployment. The static output remains the project root.
 - Keep these build settings when adding pages. If migrating hosting, adding rewrites,
   changing the preferred domain, or intentionally canonicalizing one page to another,
   update the route policy and tests as part of that change.
-- Sitemap maintenance is separate; keep its URLs aligned with these canonical URLs.
+- Every root `sitemap*.xml` file and `robots.txt` sitemap reference is normalized to the preferred `www` origin during the build. Foreign hosts, empty sitemaps and duplicate sitemap URLs fail the deployment.\n- Vercel permanently redirects every request for `zhengdarack.com` to the same path on `www.zhengdarack.com`.

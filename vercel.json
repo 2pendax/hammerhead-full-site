@@ -1,7 +1,21 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": true,
   "buildCommand": "node scripts/test-canonicals.cjs && node scripts/normalize-canonicals.cjs",
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "zhengdarack.com"
+        }
+      ],
+      "destination": "https://www.zhengdarack.com/:path*",
+      "permanent": true
+    }
+  ]
 }
 
