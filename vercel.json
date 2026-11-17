@@ -2,8 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
   "trailingSlash": true,
-  "buildCommand": "node scripts/test-canonicals.cjs && node scripts/normalize-canonicals.cjs",
-  "outputDirectory": ".",
+  "buildCommand": "npm run build",
+  "installCommand": "npm ci",
+  "outputDirectory": "dist",
   "redirects": [
     {
       "source": "/:path*",

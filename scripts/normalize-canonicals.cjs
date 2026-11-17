@@ -3,7 +3,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const ORIGIN = 'https://www.zhengdarack.com';
-const SKIP = new Set(['node_modules', 'scripts', 'tests']);
+const SKIP = new Set(['node_modules', 'scripts', 'tests', 'dist']);
 const APEX_REDIRECT = {
   source: '/:path*',
   has: [{type: 'host', value: 'zhengdarack.com'}],

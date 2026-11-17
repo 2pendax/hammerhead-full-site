@@ -1,0 +1,14 @@
+{
+  "name": "zhengdarack-static-site",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/test-canonicals.cjs && node scripts/build-site.cjs && node scripts/verify-output.cjs",
+    "test": "node scripts/test-canonicals.cjs && node scripts/verify-output.cjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
+  }
+}
