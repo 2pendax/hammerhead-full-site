@@ -4,21 +4,27 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const sharp = require('sharp');
 const {normalize, normalizeSitemap, normalizeRobots} = require('./normalize-canonicals.cjs');
+const {loadImageAliases} = require('./image-aliases.cjs');
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
+const privateFiles = new Set(['package.json', 'package-lock.json', 'vercel.json', 'CLONE_NOTES.txt']);
 
 async function verify() {
+  const aliases = await loadImageAliases(root);
+  const counted = new Set();
   let pages = 0, images = 0, totalBytes = 0;
   async function walk(dir) {
     for (const entry of await fs.readdir(dir, {withFileTypes: true})) {
-      if (entry.name.startsWith('.') || ['dist', 'scripts', 'tests', 'node_modules'].includes(entry.name)) continue;
+      if (entry.name.startsWith('.') || ['dist', 'scripts', 'tests', 'node_modules', 'work', 'outputs'].includes(entry.name)) continue;
       const source = path.join(dir, entry.name);
       if (entry.isDirectory()) { await walk(source); continue; }
       const relative = path.relative(root, source);
-      if (!/\.(html|css|js|xml|svg|jpe?g|png|webp|avif|gif|ico|woff2?|ttf|pdf)$/i.test(relative) && relative !== 'robots.txt') continue;
+      if (privateFiles.has(entry.name) || !/\.(html|css|js|json|txt|xml|svg|jpe?g|png|webp|avif|gif|ico|woff2?|ttf|pdf)$/i.test(relative)) continue;
       const before = await fs.readFile(source);
-      const after = await fs.readFile(path.join(output, relative));
-      totalBytes += after.length;
+      const target = aliases.get(relative) || relative;
+      if (aliases.has(relative)) await assert.rejects(fs.access(path.join(output, relative)), relative + ': duplicate image was deployed');
+      const after = await fs.readFile(path.join(output, target));
+      if (!counted.has(target)) { totalBytes += after.length; counted.add(target); }
       if (/\.html$/i.test(relative)) {
         const normalized = normalize(before.toString(), relative);
         assert.equal(after.toString(), normalized?.html ?? before.toString(), relative + ': page content changed');
@@ -29,8 +35,11 @@ async function verify() {
         assert.equal(after.toString(), normalizeRobots(before.toString()));
       } else if (/\.(jpe?g|png|webp|avif)$/i.test(relative)) {
         const a = await sharp(before).metadata(), b = await sharp(after).metadata();
-        assert.equal(b.format, a.format, relative + ': format changed');
-        assert.equal(b.hasAlpha, a.hasAlpha, relative + ': transparency changed');
+        assert.equal(b.format, aliases.has(relative) ? 'webp' : a.format, relative + ': unexpected format');
+        if (b.hasAlpha !== a.hasAlpha) {
+          assert.ok(aliases.has(relative) && (await sharp(before).stats()).isOpaque &&
+            (await sharp(after).stats()).isOpaque, relative + ': transparency changed');
+        }
         assert.ok(after.length <= before.length, relative + ': grew in size');
         const rotated = [5, 6, 7, 8].includes(a.orientation);
         const ratio = rotated ? a.height / a.width : a.width / a.height;
@@ -43,10 +52,10 @@ async function verify() {
     }
   }
   await walk(root);
-  for (const name of ['.git', 'node_modules', 'scripts', 'package.json', 'package-lock.json', 'vercel.json', 'README.md', 'CLONE_NOTES.txt']) {
+  for (const name of ['.git', 'node_modules', 'scripts', 'work', 'outputs', 'package.json', 'package-lock.json', 'vercel.json', 'README.md', 'CLONE_NOTES.txt']) {
     await assert.rejects(fs.access(path.join(output, name)), name + ': private build file leaked');
   }
-  assert.ok(totalBytes < 72 * 1024 * 1024, 'Deployment output exceeds the 72 MiB budget');
-  console.log(JSON.stringify({pages, images, totalBytes, checks: 'content, URLs, formats, transparency, aspect ratios, image decoding, private files, size budget'}));
+  assert.ok(totalBytes < 40 * 1024 * 1024, 'Deployment output exceeds the 40 MiB budget');
+  console.log(JSON.stringify({pages, images, imageAliases: aliases.size, totalBytes, checks: 'content, URLs, aliases, image hashes, formats, transparency, aspect ratios, image decoding, private files, size budget'}));
 }
 verify().catch(error => { console.error(error); process.exitCode = 1; });

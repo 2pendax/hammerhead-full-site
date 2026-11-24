@@ -1,5 +1,6 @@
 'use strict';
 const assert = require('node:assert/strict');
+const {isImageRewrite} = require('./image-aliases.cjs');
 const {APEX_REDIRECT, canonicalFor, normalize, normalizeSitemap, normalizeRobots, sameRedirect} = require('./normalize-canonicals.cjs');
 assert.equal(canonicalFor('index.html'), 'https://www.zhengdarack.com/');
 assert.equal(canonicalFor('new-product/index.html'), 'https://www.zhengdarack.com/new-product/');
@@ -26,5 +27,14 @@ assert.throws(() => normalizeSitemap('<urlset><url><loc>https://www.zhengdarack.
 assert.equal(normalizeRobots('Sitemap: https://zhengdarack.com/sitemap.xml'), 'Sitemap: https://www.zhengdarack.com/sitemap.xml');
 assert.ok(sameRedirect(APEX_REDIRECT));
 assert.ok(!sameRedirect({...APEX_REDIRECT, permanent: false}));
+assert.ok(isImageRewrite({source:'/images/homepage/heroImage.png',destination:'/images/homepage/heroImage.webp'}));
+for (const rule of [
+  {source:'/racking-guides/:path*',destination:'/index.html'},
+  {source:'/images/:path*.jpg',destination:'/images/:path*.webp'},
+  {source:'/images/../index.png',destination:'/images/../index.webp'},
+  {source:'/images/a.jpg',destination:'https://example.com/a.webp'},
+  {source:'/images/a.jpg',destination:'/images/b.webp'},
+  {source:'/images/a.jpg',destination:'/images/a.webp',has:[]}
+]) assert.ok(!isImageRewrite(rule), 'Non-image or non-exact rewrite must fail the SEO guard');
 console.log('SEO guard tests passed: canonicals, sitemap origin and duplicates, robots sitemap origin, apex redirect, idempotence and invalid HTML.');
 

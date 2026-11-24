@@ -17,6 +17,283 @@
       "destination": "https://www.zhengdarack.com/:path*",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/images/gated-resources/facility-optimization-checklist/heroImage.jpg",
+      "destination": "/images/gated-resources/facility-optimization-checklist/heroImage.webp"
+    },
+    {
+      "source": "/images/gated-resources/national-warehouse-inspection-program/previewImage.png",
+      "destination": "/images/gated-resources/national-warehouse-inspection-program/previewImage.webp"
+    },
+    {
+      "source": "/images/government/approachImage.JPG",
+      "destination": "/images/government/approachImage.webp"
+    },
+    {
+      "source": "/images/heroes/equipment-financing/heroImage.jpg",
+      "destination": "/images/heroes/equipment-financing/heroImage.webp"
+    },
+    {
+      "source": "/images/heroes/heroImage.jpg",
+      "destination": "/images/heroes/heroImage.webp"
+    },
+    {
+      "source": "/images/heroes/installation/heroImage.jpg",
+      "destination": "/images/heroes/installation/heroImage.webp"
+    },
+    {
+      "source": "/images/heroes/permits-compliance/heroImage.jpg",
+      "destination": "/images/heroes/permits-compliance/heroImage.webp"
+    },
+    {
+      "source": "/images/heroes/relocation-liquidation/heroImage.jpg",
+      "destination": "/images/heroes/relocation-liquidation/heroImage.webp"
+    },
+    {
+      "source": "/images/heroes/repair-maintenance/heroImage.jpg",
+      "destination": "/images/heroes/repair-maintenance/heroImage.webp"
+    },
+    {
+      "source": "/images/heroes/safety-inspections/heroImage.jpg",
+      "destination": "/images/heroes/safety-inspections/heroImage.webp"
+    },
+    {
+      "source": "/images/homepage/heroImage.png",
+      "destination": "/images/homepage/heroImage.webp"
+    },
+    {
+      "source": "/images/homepage/problemImage.jpg",
+      "destination": "/images/homepage/problemImage.webp"
+    },
+    {
+      "source": "/images/industries/3pl/approachImage.jpg",
+      "destination": "/images/industries/3pl/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/3pl/heroImage.jpg",
+      "destination": "/images/industries/3pl/heroImage.webp"
+    },
+    {
+      "source": "/images/industries/agriculture/approachImage.jpg",
+      "destination": "/images/industries/agriculture/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/archive-storage/approachImage.JPG",
+      "destination": "/images/industries/archive-storage/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/archive-storage/heroImage.jpg",
+      "destination": "/images/industries/archive-storage/heroImage.webp"
+    },
+    {
+      "source": "/images/industries/cold-storage/approachImage.jpg",
+      "destination": "/images/industries/cold-storage/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/cold-storage/heroImage.png",
+      "destination": "/images/industries/cold-storage/heroImage.webp"
+    },
+    {
+      "source": "/images/industries/commercial-real-estate/approachImage.jpeg",
+      "destination": "/images/industries/commercial-real-estate/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/commercial-real-estate/heroImage.jpg",
+      "destination": "/images/industries/commercial-real-estate/heroImage.webp"
+    },
+    {
+      "source": "/images/industries/ecommerce-fulfillment/approachImage.jpg",
+      "destination": "/images/industries/ecommerce-fulfillment/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/industries-warehouse-shelving-aisle.jpg",
+      "destination": "/images/industries/industries-warehouse-shelving-aisle.webp"
+    },
+    {
+      "source": "/images/industries/manufacturing/approachImage.jpg",
+      "destination": "/images/industries/manufacturing/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/medical-pharma/approachImage.png",
+      "destination": "/images/industries/medical-pharma/approachImage.webp"
+    },
+    {
+      "source": "/images/industries/medical-pharma/heroImage.jpg",
+      "destination": "/images/industries/medical-pharma/heroImage.webp"
+    },
+    {
+      "source": "/images/industries/retail/approachImage.jpg",
+      "destination": "/images/industries/retail/approachImage.webp"
+    },
+    {
+      "source": "/images/press-releases/hammerhead-warehouse-systems-to-showcase-capacity-calculator-at-modex-2026/image.png",
+      "destination": "/images/press-releases/hammerhead-warehouse-systems-to-showcase-capacity-calculator-at-modex-2026/image.webp"
+    },
+    {
+      "source": "/images/resources/selective-vs-drive-in-racking.jpg",
+      "destination": "/images/resources/selective-vs-drive-in-racking.webp"
+    },
+    {
+      "source": "/images/resources/warehouse-racking-project-budget.jpg",
+      "destination": "/images/resources/warehouse-racking-project-budget.webp"
+    },
+    {
+      "source": "/images/services/design-layout/challengeImage.jpg",
+      "destination": "/images/services/design-layout/challengeImage.webp"
+    },
+    {
+      "source": "/images/services/equipment-financing/challengeImage.jpg",
+      "destination": "/images/services/equipment-financing/challengeImage.webp"
+    },
+    {
+      "source": "/images/services/installation/challengeImage.jpg",
+      "destination": "/images/services/installation/challengeImage.webp"
+    },
+    {
+      "source": "/images/services/relocation-liquidation/challengeImage.JPG",
+      "destination": "/images/services/relocation-liquidation/challengeImage.webp"
+    },
+    {
+      "source": "/images/services/repair-maintenance/challengeImage.jpg",
+      "destination": "/images/services/repair-maintenance/challengeImage.webp"
+    },
+    {
+      "source": "/images/services/safety-inspections/challengeImage.jpg",
+      "destination": "/images/services/safety-inspections/challengeImage.webp"
+    },
+    {
+      "source": "/images/solutions/archive-storage/diagramImage.png",
+      "destination": "/images/solutions/archive-storage/diagramImage.webp"
+    },
+    {
+      "source": "/images/solutions/archive-storage/heroImage.jpg",
+      "destination": "/images/solutions/archive-storage/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/archive-storage/productImage.jpg",
+      "destination": "/images/solutions/archive-storage/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/automated-storage/heroImage.jpg",
+      "destination": "/images/solutions/automated-storage/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/beverage-keg-storage/heroImage.jpg",
+      "destination": "/images/solutions/beverage-keg-storage/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/cantilever-rack/diagramImage.jpg",
+      "destination": "/images/solutions/cantilever-rack/diagramImage.webp"
+    },
+    {
+      "source": "/images/solutions/cantilever-rack/heroImage.jpg",
+      "destination": "/images/solutions/cantilever-rack/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/cantilever-rack/installImage.jpg",
+      "destination": "/images/solutions/cantilever-rack/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/cantilever-rack/productImage.jpg",
+      "destination": "/images/solutions/cantilever-rack/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/carton-flow-racks/heroImage.jpg",
+      "destination": "/images/solutions/carton-flow-racks/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/carton-flow-racks/installImage.jpg",
+      "destination": "/images/solutions/carton-flow-racks/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/drive-in-racks/diagramImage.jpg",
+      "destination": "/images/solutions/drive-in-racks/diagramImage.webp"
+    },
+    {
+      "source": "/images/solutions/drive-in-racks/heroImage.jpg",
+      "destination": "/images/solutions/drive-in-racks/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/drive-in-racks/installImage.JPG",
+      "destination": "/images/solutions/drive-in-racks/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/drive-in-racks/productImage.jpg",
+      "destination": "/images/solutions/drive-in-racks/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/mezzanines/heroImage.jpg",
+      "destination": "/images/solutions/mezzanines/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/mezzanines/installImage.jpg",
+      "destination": "/images/solutions/mezzanines/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/mezzanines/productImage.jpg",
+      "destination": "/images/solutions/mezzanines/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/mobile-pallet-racking/heroImage.jpg",
+      "destination": "/images/solutions/mobile-pallet-racking/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/mobile-pallet-racking/productImage.jpg",
+      "destination": "/images/solutions/mobile-pallet-racking/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/pallet-flow-racks/heroImage.jpg",
+      "destination": "/images/solutions/pallet-flow-racks/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/pallet-flow-racks/productImage.jpg",
+      "destination": "/images/solutions/pallet-flow-racks/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/pick-modules/installImage.jpg",
+      "destination": "/images/solutions/pick-modules/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/pick-modules/productImage.jpg",
+      "destination": "/images/solutions/pick-modules/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/push-back-racking/diagramImage.jpg",
+      "destination": "/images/solutions/push-back-racking/diagramImage.webp"
+    },
+    {
+      "source": "/images/solutions/push-back-racking/productImage.jpg",
+      "destination": "/images/solutions/push-back-racking/productImage.webp"
+    },
+    {
+      "source": "/images/solutions/selective-pallet-racks/diagramImage.jpg",
+      "destination": "/images/solutions/selective-pallet-racks/diagramImage.webp"
+    },
+    {
+      "source": "/images/solutions/selective-pallet-racks/heroImage.jpg",
+      "destination": "/images/solutions/selective-pallet-racks/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/selective-pallet-racks/installImage.jpg",
+      "destination": "/images/solutions/selective-pallet-racks/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/shelving-systems/diagramImage.JPG",
+      "destination": "/images/solutions/shelving-systems/diagramImage.webp"
+    },
+    {
+      "source": "/images/solutions/shelving-systems/heroImage.jpg",
+      "destination": "/images/solutions/shelving-systems/heroImage.webp"
+    },
+    {
+      "source": "/images/solutions/shelving-systems/installImage.JPG",
+      "destination": "/images/solutions/shelving-systems/installImage.webp"
+    },
+    {
+      "source": "/images/solutions/shelving-systems/productImage.JPG",
+      "destination": "/images/solutions/shelving-systems/productImage.webp"
+    }
   ]
 }
-

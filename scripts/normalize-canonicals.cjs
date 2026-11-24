@@ -2,8 +2,9 @@
 'use strict';
 const fs = require('node:fs');
 const path = require('node:path');
+const {isImageRewrite} = require('./image-aliases.cjs');
 const ORIGIN = 'https://www.zhengdarack.com';
-const SKIP = new Set(['node_modules', 'scripts', 'tests', 'dist']);
+const SKIP = new Set(['node_modules', 'scripts', 'tests', 'dist', 'work', 'outputs']);
 const APEX_REDIRECT = {
   source: '/:path*',
   has: [{type: 'host', value: 'zhengdarack.com'}],
@@ -74,9 +75,9 @@ function sameRedirect(actual) {
 
 function run(root) {
   const config = JSON.parse(fs.readFileSync(path.join(root, 'vercel.json'), 'utf8'));
-  if (config.cleanUrls !== true || config.trailingSlash !== true || config.rewrites?.length ||
+  if (config.cleanUrls !== true || config.trailingSlash !== true || (config.rewrites || []).some(rule => !isImageRewrite(rule)) ||
       !config.redirects?.some(sameRedirect)) {
-    throw new Error('SEO routing requires cleanUrls=true, trailingSlash=true, no rewrites, and the apex-to-www permanent redirect.');
+    throw new Error('SEO routing requires cleanUrls=true, trailingSlash=true, only exact image rewrites, and the apex-to-www permanent redirect.');
   }
   const edits = [], seen = new Set(), sitemapEdits = [];
   function walk(dir) {
