@@ -4,6 +4,7 @@ const path = require('node:path');
 const sharp = require('sharp');
 const {run: normalizeCanonicals} = require('./normalize-canonicals.cjs');
 const {loadImageAliases} = require('./image-aliases.cjs');
+const {loadReferencedImages} = require('./referenced-images.cjs');
 
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
@@ -14,6 +15,9 @@ const privateFiles = new Set(['package.json', 'package-lock.json', 'vercel.json'
 
 async function build() {
   const aliases = await loadImageAliases(root);
+  const referencedImages = await loadReferencedImages(root);
+  const requiredImages = new Set(referencedImages);
+  for (const image of referencedImages) if (aliases.has(image)) requiredImages.add(aliases.get(image));
   await fs.rm(output, {recursive: true, force: true});
   let sourceBytes = 0, outputBytes = 0, optimized = 0, files = 0;
   async function walk(dir) {
@@ -25,6 +29,7 @@ async function build() {
       const relative = path.relative(root, input);
       const original = await fs.readFile(input);
       sourceBytes += original.length;
+      if (/^images[\\/]/i.test(relative) && /\.(?:jpe?g|png|webp|avif|gif|svg)$/i.test(relative) && !requiredImages.has(relative)) continue;
       // Vercel serves the already-existing WebP at the original JPG/PNG URL.
       // The original remains in Git, but is not stored in every deployment.
       if (aliases.has(relative)) continue;
@@ -55,7 +60,7 @@ async function build() {
   await fs.copyFile(path.join(root, 'vercel.json'), path.join(output, 'vercel.json'));
   normalizeCanonicals(output);
   await fs.unlink(path.join(output, 'vercel.json'));
-  console.log(JSON.stringify({files, optimized, imageAliases: aliases.size, sourceBytes, outputBytes,
+  console.log(JSON.stringify({files, optimized, imageAliases: aliases.size, referencedImages: referencedImages.size, sourceBytes, outputBytes,
     reduction: ((1 - outputBytes / sourceBytes) * 100).toFixed(1) + '%'}));
 }
 build().catch(error => { console.error(error); process.exitCode = 1; });

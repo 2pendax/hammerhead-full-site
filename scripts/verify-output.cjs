@@ -5,12 +5,16 @@ const path = require('node:path');
 const sharp = require('sharp');
 const {normalize, normalizeSitemap, normalizeRobots} = require('./normalize-canonicals.cjs');
 const {loadImageAliases} = require('./image-aliases.cjs');
+const {loadReferencedImages} = require('./referenced-images.cjs');
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
 const privateFiles = new Set(['package.json', 'package-lock.json', 'vercel.json', 'CLONE_NOTES.txt']);
 
 async function verify() {
   const aliases = await loadImageAliases(root);
+  const referencedImages = await loadReferencedImages(root);
+  const requiredImages = new Set(referencedImages);
+  for (const image of referencedImages) if (aliases.has(image)) requiredImages.add(aliases.get(image));
   const counted = new Set();
   let pages = 0, images = 0, totalBytes = 0;
   async function walk(dir) {
@@ -22,6 +26,10 @@ async function verify() {
       if (privateFiles.has(entry.name) || !/\.(html|css|js|json|txt|xml|svg|jpe?g|png|webp|avif|gif|ico|woff2?|ttf|pdf)$/i.test(relative)) continue;
       const before = await fs.readFile(source);
       const target = aliases.get(relative) || relative;
+      if (/^images[\\/]/i.test(relative) && /\.(?:jpe?g|png|webp|avif|gif|svg)$/i.test(relative) && !requiredImages.has(relative)) {
+        await assert.rejects(fs.access(path.join(output, relative)), relative + ': unreferenced image was deployed');
+        continue;
+      }
       if (aliases.has(relative)) await assert.rejects(fs.access(path.join(output, relative)), relative + ': duplicate image was deployed');
       const after = await fs.readFile(path.join(output, target));
       if (!counted.has(target)) { totalBytes += after.length; counted.add(target); }
@@ -56,6 +64,6 @@ async function verify() {
     await assert.rejects(fs.access(path.join(output, name)), name + ': private build file leaked');
   }
   assert.ok(totalBytes < 40 * 1024 * 1024, 'Deployment output exceeds the 40 MiB budget');
-  console.log(JSON.stringify({pages, images, imageAliases: aliases.size, totalBytes, checks: 'content, URLs, aliases, image hashes, formats, transparency, aspect ratios, image decoding, private files, size budget'}));
+  console.log(JSON.stringify({pages, images, imageAliases: aliases.size, referencedImages: referencedImages.size, totalBytes, checks: 'content, URLs, referenced assets, aliases, image hashes, formats, transparency, aspect ratios, image decoding, private files, size budget'}));
 }
 verify().catch(error => { console.error(error); process.exitCode = 1; });
