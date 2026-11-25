@@ -49,6 +49,30 @@ header nav .nav-phone:focus-visible {
   display: none;
 }
 
+.home-hero {
+  position: relative;
+  isolation: isolate;
+  background: linear-gradient(90deg, rgb(8 18 35 / 92%), rgb(8 18 35 / 62%)), url('/images/field-projects/drive-in-warehouse-1.webp') center 48% / cover no-repeat !important;
+}
+
+.home-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, transparent 60%, rgb(8 18 35 / 24%));
+}
+
+.home-card-photo {
+  display: block;
+  width: calc(100% + 48px);
+  max-width: none;
+  height: 190px;
+  margin: -24px -24px 20px;
+  border-radius: 12px 12px 0 0;
+  object-fit: cover;
+}
+
 @media (max-width: 600px) {
   html {
     scroll-padding-top: 132px;

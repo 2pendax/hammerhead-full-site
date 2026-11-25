@@ -1,0 +1,41 @@
+/* Real project photography */
+.field-hero img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.field-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  margin: 4px 0 46px;
+}
+
+.field-gallery figure {
+  margin: 0;
+}
+
+.field-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border: 1px solid #dfe5ec;
+  border-radius: 10px;
+}
+
+.field-gallery figcaption {
+  max-width: 68ch;
+}
+
+.field-gallery-single {
+  grid-template-columns: minmax(0, 780px);
+}
+
+@media (max-width: 600px) {
+  .field-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 34px;
+  }
+}
