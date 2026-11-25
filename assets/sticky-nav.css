@@ -15,6 +15,12 @@ header nav {
   align-items: center;
 }
 
+header .brand,
+header .brand:hover,
+header .brand:focus-visible {
+  color: #f36b21;
+}
+
 header nav .nav-phone {
   display: inline-flex;
   align-items: center;
