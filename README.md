@@ -52,29 +52,20 @@ Vercel runs `npm ci` and `npm run build` before each deployment. Only the genera
 Run `npm ci`, `npm run build`, then `npm test`. Preview the production routing
 with `npx vercel dev`; a plain static server does not apply the image aliases.
 
-The build resizes JPEG/PNG files over 200 KiB to fit within 1920 × 1920 pixels,
-without cropping or enlarging, and encodes JPEGs at quality 76. It retains the
-original when encoding would increase its size. Existing WebP/AVIF responsive
-variants, small icons, image URLs, and source originals are preserved.
+The build fits JPEG/PNG files over 200 KiB within 1920 × 1920 pixels and
+single-frame WebP files over 40 KiB within 1280 × 1280 pixels. It preserves
+aspect ratios and keeps the smaller of the input and encoded output.
 
-69 reviewed JPG/PNG URLs reuse an existing matching WebP through exact Vercel
-rewrites. The original files stay in Git; only the redundant deployed copies are
-omitted. This reduces the current output from 57.48 MB to 36.33 MB (36.8%) without
-re-encoding those WebP files. Rewrites preserve the requested URL and serve the
-destination's `image/webp` content type. No HTML, canonical, or sitemap route is
-rewritten. Modern browsers support WebP; legacy browsers without WebP support
-will not be able to display these aliased images.
-
-`scripts/image-aliases.json` pins both source and destination hashes so replacing
-either image cannot silently serve an outdated or unrelated variant. When editing
-one of these images, review both versions and update the hashes, or remove the
-entry **and** its matching `vercel.json` rewrite to restore the original URL/file.
-New images are deployed normally until explicitly reviewed for aliasing.
+69 reviewed JPG/PNG URLs use exact Vercel rewrites to serve matching WebP images.
+The previous Git revision retains the redundant originals. The alias manifest
+pins the destination hash. Review the image and update its hash when replacing a
+destination. To serve a JPG/PNG directly again, restore the file and remove both
+its alias entry and its rewrite.
 
 Only public website assets are copied into `dist/`; Git metadata, scripts, package
 files, clone notes, and dependencies are excluded. Add any new public file type
 to the build allowlist before deploying it. The verification checks all pages and
-images, verifies every alias and its source hashes, preserves SEO normalization,
+images, verifies every alias and its destination hash, preserves SEO normalization,
 and enforces a 40 MiB deployment budget. Scratch work and output folders are
 excluded from deployment along with development files.
 

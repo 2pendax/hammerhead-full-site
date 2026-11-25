@@ -31,18 +31,17 @@ async function build() {
       sourceBytes += original.length;
       if (/^images[\\/]/i.test(relative) && /\.(?:jpe?g|png|webp|avif|gif|svg)$/i.test(relative) && !requiredImages.has(relative)) continue;
       // Vercel serves the already-existing WebP at the original JPG/PNG URL.
-      // The original remains in Git, but is not stored in every deployment.
       if (aliases.has(relative)) continue;
       const destination = path.join(output, relative);
       let data = original;
       // Keep each public image URL and format, including JPEG fallbacks.
       // Never upscale, crop, alter small icons, or replace an image with a larger file.
-      if (relative.startsWith('images/field-projects' + path.sep) && /\.webp$/i.test(entry.name)) {
+      if (/\.webp$/i.test(entry.name) && original.length > 40 * 1024) {
         const metadata = await sharp(original).metadata();
         if ((metadata.pages || 1) === 1) {
           const candidate = await sharp(original).rotate()
             .resize({width: 1280, height: 1280, fit: 'inside', withoutEnlargement: true})
-            .webp({quality: 72, effort: 5}).toBuffer();
+            .webp({quality: 68, effort: 5}).toBuffer();
           if (candidate.length < original.length) { data = candidate; optimized++; }
         }
       } else if (/\.(jpe?g|png)$/i.test(entry.name) && original.length > 200 * 1024) {

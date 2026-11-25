@@ -2,415 +2,346 @@
   {
     "source": "/images/gated-resources/facility-optimization-checklist/heroImage.jpg",
     "destination": "/images/gated-resources/facility-optimization-checklist/heroImage.webp",
-    "sourceSha256": "15d4553857fe8803d193bc71b67bdf434f5fb68f4e8a7415a6e3b22eeaa0fcca",
     "destinationSha256": "b131936200fba720f4e7fcd36c43dc2749f13d07d34a8205ea42112d7fecb2a1"
   },
   {
     "source": "/images/gated-resources/national-warehouse-inspection-program/previewImage.png",
     "destination": "/images/gated-resources/national-warehouse-inspection-program/previewImage.webp",
-    "sourceSha256": "961d0a5faf1b379d2674827290cdc95358b4fe73cefb5682c4e7776bd0d984aa",
     "destinationSha256": "7e36562b994bdb9c6b64a132ccc5c815e744bec46d127915aef6f6c33737ec5e"
   },
   {
     "source": "/images/government/approachImage.JPG",
     "destination": "/images/government/approachImage.webp",
-    "sourceSha256": "4f613b00a3aa6f5ba2cfebee483d67a8e06dd204f38db83930e3bb107f69eb1c",
     "destinationSha256": "ffd4d12345aa6ab289ca006409370d0127d901fbaa3d521e6e7979e123669ede"
   },
   {
     "source": "/images/heroes/equipment-financing/heroImage.jpg",
     "destination": "/images/heroes/equipment-financing/heroImage.webp",
-    "sourceSha256": "3c8c1c485b005a9cbf261c454d6a896333a72f2fa164f06866c03e00dd76ea31",
     "destinationSha256": "7e5c0e1e737490ec4a84da248bd3ffa151fa4eb35e16ff51a54a93f4e8c326a5"
   },
   {
     "source": "/images/heroes/heroImage.jpg",
     "destination": "/images/heroes/heroImage.webp",
-    "sourceSha256": "31a2acbf3b44961b271727fbdf369773767ff8492ae6b56a242d565eecae3cd4",
     "destinationSha256": "df912845209ee8f75f45d7ec37148f2286ea3144cd58ae943f10b2abd151736c"
   },
   {
     "source": "/images/heroes/installation/heroImage.jpg",
     "destination": "/images/heroes/installation/heroImage.webp",
-    "sourceSha256": "3b6084f51fb014b001f1ce38263defe39e1b1af6f0f3730d697b05fef588abd6",
     "destinationSha256": "c96cda317cbc8b5256ddf5a4c8f84b9a6cf0bb068774c3a6f88e249f875febf2"
   },
   {
     "source": "/images/heroes/permits-compliance/heroImage.jpg",
     "destination": "/images/heroes/permits-compliance/heroImage.webp",
-    "sourceSha256": "990f123c0eb314025a7ed229b643ee5a0b50fffae4da2dbd623ba38607d1bdf3",
     "destinationSha256": "94366b7ad334ad7832ef272e8422b852cace05ff6914a9f8c7e376ea054c3658"
   },
   {
     "source": "/images/heroes/relocation-liquidation/heroImage.jpg",
     "destination": "/images/heroes/relocation-liquidation/heroImage.webp",
-    "sourceSha256": "31a2acbf3b44961b271727fbdf369773767ff8492ae6b56a242d565eecae3cd4",
     "destinationSha256": "df912845209ee8f75f45d7ec37148f2286ea3144cd58ae943f10b2abd151736c"
   },
   {
     "source": "/images/heroes/repair-maintenance/heroImage.jpg",
     "destination": "/images/heroes/repair-maintenance/heroImage.webp",
-    "sourceSha256": "6cbebf50247bec5cb74ad2be94594e8014ae1b8ba24573855e042a7aaa62364f",
     "destinationSha256": "5dd1932acc8a07f670eb3b84a1c67e2f7f95b348f431ec2d4a47da3cf53c7339"
   },
   {
     "source": "/images/heroes/safety-inspections/heroImage.jpg",
     "destination": "/images/heroes/safety-inspections/heroImage.webp",
-    "sourceSha256": "1bb3e177d8ae1e068cf2023b2533879cc11ce07e80fb27fe455236b1ba814112",
     "destinationSha256": "14998ee3b691f348d3f2cf91101a51cf9ac041825e64f1054d52a6a158170fec"
   },
   {
     "source": "/images/homepage/heroImage.png",
     "destination": "/images/homepage/heroImage.webp",
-    "sourceSha256": "303a64365d57ad6de108ccdc04323c2e294cd3d23dac3549e0e24169624efa3a",
     "destinationSha256": "a40f87c8939a7ea7ad01f970b8690c73d5d3b5f202bb1680382d455581fbf546"
   },
   {
     "source": "/images/homepage/problemImage.jpg",
     "destination": "/images/homepage/problemImage.webp",
-    "sourceSha256": "b2fb71d595f0f6414aad97785980ca220ae9903d21149a98caee03df4c2113f5",
     "destinationSha256": "7cebb0e0739978acb60ea06404fc8f35382f3cfed4b8948b9e9c66fa9127f306"
   },
   {
     "source": "/images/industries/3pl/approachImage.jpg",
     "destination": "/images/industries/3pl/approachImage.webp",
-    "sourceSha256": "ab88d7b08f80e5da8f84d46cf978a18ee402a9a36a835c1a78b1d17dd1ad230a",
     "destinationSha256": "eafd7cfa2af07f9dd5dd669494832bbbe4196113a2c1e02928c0f35bdc09c204"
   },
   {
     "source": "/images/industries/3pl/heroImage.jpg",
     "destination": "/images/industries/3pl/heroImage.webp",
-    "sourceSha256": "033dc7de430d169c63541f7945dcfc1dad66df151b3afbc1943ba88f24ecf457",
     "destinationSha256": "3d2103391898bbd433247052d3e6ccb71588eef29df11f94f87a9e3fb076a63e"
   },
   {
     "source": "/images/industries/agriculture/approachImage.jpg",
     "destination": "/images/industries/agriculture/approachImage.webp",
-    "sourceSha256": "4be471fcd50a92e0b4b8c3b31a0e5b66e0ebbd9688a34e51a87f1f3f35663081",
     "destinationSha256": "4ba1769159ca5318552c1fe846d217a620daec268230d7ed79dc50fb4aa5409e"
   },
   {
     "source": "/images/industries/archive-storage/approachImage.JPG",
     "destination": "/images/industries/archive-storage/approachImage.webp",
-    "sourceSha256": "51201e53d6121419b10430f5c394857aa74a4b25848ccccedc51036197c0dd7b",
     "destinationSha256": "5083d9940ed8eb7b6e235066a823b908dd20d31178816d86b097de7981ccc25b"
   },
   {
     "source": "/images/industries/archive-storage/heroImage.jpg",
     "destination": "/images/industries/archive-storage/heroImage.webp",
-    "sourceSha256": "fffb9feeec4ae88fca726b413ccdfc1aa31f043ba6431f41aeda5915edad2817",
     "destinationSha256": "d9cf5bfc07dd92a71a647174b868193c436778d9d44a3ff6965bed13071ad7e0"
   },
   {
     "source": "/images/industries/cold-storage/approachImage.jpg",
     "destination": "/images/industries/cold-storage/approachImage.webp",
-    "sourceSha256": "8bb5ee5d911a3c10c0c8cf5a1d143cf4b41df180af65b444d99d54e6a38c30e9",
     "destinationSha256": "53c74ff5010a0be259e094a99d3abb3ebb3fae8b4481ab90770b68f030c9eedb"
   },
   {
     "source": "/images/industries/cold-storage/heroImage.png",
     "destination": "/images/industries/cold-storage/heroImage.webp",
-    "sourceSha256": "3a5c864a136cb3311de4856414265c8e284c0134410124d6b8397500f2594201",
     "destinationSha256": "69d9178b31abc6802b3300bd475876f01d24ec3e9c84dfb9d080ece889df978b"
   },
   {
     "source": "/images/industries/commercial-real-estate/approachImage.jpeg",
     "destination": "/images/industries/commercial-real-estate/approachImage.webp",
-    "sourceSha256": "5349927a29f76e0ec90d593dc49950da1e75d2f8fb6f698f61f7cf0f2ef945b9",
     "destinationSha256": "8299aacdcbb181b83a39ecf0bf355b16ab94249e63ad9b7b19e484d6daa11a3e"
   },
   {
     "source": "/images/industries/commercial-real-estate/heroImage.jpg",
     "destination": "/images/industries/commercial-real-estate/heroImage.webp",
-    "sourceSha256": "05dd00fc80d7ebc2cd203795a65567ff1be5852a9f4a5178b6c3ef1ae76934af",
     "destinationSha256": "e0ec55a35d7c510454764d7e8921100934bf813e44f96a3ea466ca0f8e2e0591"
   },
   {
     "source": "/images/industries/ecommerce-fulfillment/approachImage.jpg",
     "destination": "/images/industries/ecommerce-fulfillment/approachImage.webp",
-    "sourceSha256": "423f6b3002b5480ab8f72f8d9116c7ea3f1e4f42e570d92345705dc0368c27ca",
     "destinationSha256": "f057285f665511b6dd78649253a68d7fb3b92b34adf1f40ae619864dfde8b07b"
   },
   {
     "source": "/images/industries/industries-warehouse-shelving-aisle.jpg",
     "destination": "/images/industries/industries-warehouse-shelving-aisle.webp",
-    "sourceSha256": "00e45f099f21cf562b15d903b9b1a0c4543e09e034af354becf9f4d924712c33",
     "destinationSha256": "181c2b46b340a069b908bc32577510614b8a1ea13a96e3cbd0ecd7696875db01"
   },
   {
     "source": "/images/industries/manufacturing/approachImage.jpg",
     "destination": "/images/industries/manufacturing/approachImage.webp",
-    "sourceSha256": "379371f24596921a2416325cd47f2e71c67b001edbc9ed88ad1ac2911611a519",
     "destinationSha256": "574dc4eb66b5d633dd77183407f57e15271e320a6db53e8ea94eced0058f017d"
   },
   {
     "source": "/images/industries/medical-pharma/approachImage.png",
     "destination": "/images/industries/medical-pharma/approachImage.webp",
-    "sourceSha256": "b1e547abec165fb72012edd0e29fbeb01bec5b8b9bf5b4df45c8ef82c233a25d",
     "destinationSha256": "bc296456cdf075880cb442da6b7dbae95d6ddc59b9035945e9f6dfd647168c9a"
   },
   {
     "source": "/images/industries/medical-pharma/heroImage.jpg",
     "destination": "/images/industries/medical-pharma/heroImage.webp",
-    "sourceSha256": "ab88d7b08f80e5da8f84d46cf978a18ee402a9a36a835c1a78b1d17dd1ad230a",
     "destinationSha256": "77b2689c34315721429fe53ed5d96952de3bbce6da85fa572d6e409f75310b9a"
   },
   {
     "source": "/images/industries/retail/approachImage.jpg",
     "destination": "/images/industries/retail/approachImage.webp",
-    "sourceSha256": "3afd75c501954ee4f6fca832446a285d152f3a2afcaa9a5169fe39ddd2a69122",
     "destinationSha256": "f3046ae251d3194f6df4baf258e412ffdbc054ed000bc53b899c31309a88485a"
   },
   {
     "source": "/images/press-releases/hammerhead-warehouse-systems-to-showcase-capacity-calculator-at-modex-2026/image.png",
     "destination": "/images/press-releases/hammerhead-warehouse-systems-to-showcase-capacity-calculator-at-modex-2026/image.webp",
-    "sourceSha256": "d8187cfc870b91af170b11b8ec765bcf1e30fede987ee68d8200f07399f1f190",
     "destinationSha256": "f2a3a7d8f37affd989e44beb837459e02fee4206860aceba7f5af2a58e4240be"
   },
   {
     "source": "/images/resources/selective-vs-drive-in-racking.jpg",
     "destination": "/images/resources/selective-vs-drive-in-racking.webp",
-    "sourceSha256": "71f2dadaf7efe6b71685f704d771a6a233f1d19e0efe95332eb6b505c5293c22",
     "destinationSha256": "8de07cfd901c2bb9161c807d18814344e54d39e76001a803888dd07ff7fb9fcb"
   },
   {
     "source": "/images/resources/warehouse-racking-project-budget.jpg",
     "destination": "/images/resources/warehouse-racking-project-budget.webp",
-    "sourceSha256": "605bc8bc47121aeb3e529e4c34f03c8f3ed8219580b40bc3f16ae0ae35babdd6",
     "destinationSha256": "142110b0ef4f32006acc481239345d9698c85336591623c54b8f81381f2c1480"
   },
   {
     "source": "/images/services/design-layout/challengeImage.jpg",
     "destination": "/images/services/design-layout/challengeImage.webp",
-    "sourceSha256": "1c338b53f75747e8e59db44a421c66fc22cc256ede065bac17c05d5a46ddd04d",
     "destinationSha256": "c1839e953e0d3851095da8d05e463d7573cf4b06cad1b6a06e457428e81f7455"
   },
   {
     "source": "/images/services/equipment-financing/challengeImage.jpg",
     "destination": "/images/services/equipment-financing/challengeImage.webp",
-    "sourceSha256": "5bc3f710c92ef40a5cb69a843f4e338359da223b30380af2148b5b8ecf8bac54",
     "destinationSha256": "3e1d9e9e8d1de71d2a2e514682b2392a90816a018de2f3d5521c788305156482"
   },
   {
     "source": "/images/services/installation/challengeImage.jpg",
     "destination": "/images/services/installation/challengeImage.webp",
-    "sourceSha256": "54c9283bd780529311e3b69003f1080feefae074e8f33f58b4ee7e2d9422fd2d",
     "destinationSha256": "a482ea9005d2e20af90d85f644f369da5aa8478b68dab1d1d3172a83f2bffaef"
   },
   {
     "source": "/images/services/relocation-liquidation/challengeImage.JPG",
     "destination": "/images/services/relocation-liquidation/challengeImage.webp",
-    "sourceSha256": "d2a4a7ee5bf202261d3046645dcdc861fd6c1a3b1d40e02b6ab74e0428c8c0a2",
     "destinationSha256": "bdfe7fe57de8721e6e03650b936b17ed2725bc36859be6a0ca93f3325a9d15d4"
   },
   {
     "source": "/images/services/repair-maintenance/challengeImage.jpg",
     "destination": "/images/services/repair-maintenance/challengeImage.webp",
-    "sourceSha256": "eb5e21fc42b045756c2912a8ef3a8eac369fe96fa2a7ac417d3cdcc257a7b326",
     "destinationSha256": "b7cc15d4e7c96dee45c78b75cc9e1e553085dbfff96af939c001181825849b66"
   },
   {
     "source": "/images/services/safety-inspections/challengeImage.jpg",
     "destination": "/images/services/safety-inspections/challengeImage.webp",
-    "sourceSha256": "f69d8fefdcc2e9dc9520eb5b025fa9023e81ce497642b3bea752125c8ff15dcd",
     "destinationSha256": "f077081a7a194b5421b3a0c0a702ca16031b8129aa60b0cecf985bac3ca91dca"
   },
   {
     "source": "/images/solutions/archive-storage/diagramImage.png",
     "destination": "/images/solutions/archive-storage/diagramImage.webp",
-    "sourceSha256": "9cb6f1ae605b4788ed0b8cfec86d154fe5cd0db9db7dba077cfcb5f706a45408",
     "destinationSha256": "5381751fb8915aa6e1dd39ac875a73cb62afc32ca347df2761b5d7a55b7f7fa2"
   },
   {
     "source": "/images/solutions/archive-storage/heroImage.jpg",
     "destination": "/images/solutions/archive-storage/heroImage.webp",
-    "sourceSha256": "fffb9feeec4ae88fca726b413ccdfc1aa31f043ba6431f41aeda5915edad2817",
     "destinationSha256": "d9cf5bfc07dd92a71a647174b868193c436778d9d44a3ff6965bed13071ad7e0"
   },
   {
     "source": "/images/solutions/archive-storage/productImage.jpg",
     "destination": "/images/solutions/archive-storage/productImage.webp",
-    "sourceSha256": "6130e08fb679a0b9151a25c8864682b028b92893be42582d0b0fbac960207271",
     "destinationSha256": "7baead62532a1ca4221b569156ef5040b882e66c82c9d458ae9c796e4fbcdf9b"
   },
   {
     "source": "/images/solutions/automated-storage/heroImage.jpg",
     "destination": "/images/solutions/automated-storage/heroImage.webp",
-    "sourceSha256": "4017f2db921830befe22998dea9fd3d99e60cc59c3eeae1b4aee0d13e073c718",
     "destinationSha256": "b772bbffd21f89055ee43c676ac4e7020b1ec0750c55d66ff360b976c8f9b0be"
   },
   {
     "source": "/images/solutions/beverage-keg-storage/heroImage.jpg",
     "destination": "/images/solutions/beverage-keg-storage/heroImage.webp",
-    "sourceSha256": "282192335c4d3fb05228b97bbeacf399ea95411e14debafe093cbde6c3555622",
     "destinationSha256": "5e92e87f2ed724720f6a403e2ae9035ec1973f145e7a87cb1eb6474757ef9744"
   },
   {
     "source": "/images/solutions/cantilever-rack/diagramImage.jpg",
     "destination": "/images/solutions/cantilever-rack/diagramImage.webp",
-    "sourceSha256": "39a1434075b8c487020246028736c46dff36967becc3573b2c83377070a32f02",
     "destinationSha256": "6ecf2778dda4ac493123ab6e3fc4e177b8f8573c2a52c2cc3e4d870b1d6ecadd"
   },
   {
     "source": "/images/solutions/cantilever-rack/heroImage.jpg",
     "destination": "/images/solutions/cantilever-rack/heroImage.webp",
-    "sourceSha256": "4509f638a10b387cc7a0d38d737cea02bfb337ed89371c2c94f94390a4249c42",
     "destinationSha256": "21a5f8bed83573683dd3fd59381d1b9625ec10f8416780b84e16233dea140e69"
   },
   {
     "source": "/images/solutions/cantilever-rack/installImage.jpg",
     "destination": "/images/solutions/cantilever-rack/installImage.webp",
-    "sourceSha256": "7849da2ba6ab50aa8e814c715177a27240fce743b0fa57bb5981f8e64fe1f06a",
     "destinationSha256": "1fba620c4ee7ce55cd5ad820850156e3a7ff168198fea67f1a00d767d1120f7a"
   },
   {
     "source": "/images/solutions/cantilever-rack/productImage.jpg",
     "destination": "/images/solutions/cantilever-rack/productImage.webp",
-    "sourceSha256": "3a44be495e6a4b6dabaca37bc3bf92e347db5a9b49b4d5094ef891b0b104ce98",
     "destinationSha256": "96933e93a63a7ea6703c8f4fdfbf8455ea8dd3556d8ecf0891c2547c7b9490a3"
   },
   {
     "source": "/images/solutions/carton-flow-racks/heroImage.jpg",
     "destination": "/images/solutions/carton-flow-racks/heroImage.webp",
-    "sourceSha256": "726643e18d66ae39cd9dd375ffdbb67629cbfd513e69b8c9759773b660b113df",
     "destinationSha256": "c7ba7c4dcdd51fecb87dd0385d2abe119d813bacf8bb012889f33c0874e3e438"
   },
   {
     "source": "/images/solutions/carton-flow-racks/installImage.jpg",
     "destination": "/images/solutions/carton-flow-racks/installImage.webp",
-    "sourceSha256": "2dda2cba64733c12fb5c09f0ccc40572f44c1d644ae74eb37bcede341fc248f1",
     "destinationSha256": "2cf70a7e5fc60ceeb45c159e117df0046177ac55250b77528c33d148f1167d4b"
   },
   {
     "source": "/images/solutions/drive-in-racks/diagramImage.jpg",
     "destination": "/images/solutions/drive-in-racks/diagramImage.webp",
-    "sourceSha256": "4e40391ae61462391559c71fc7579fa1d2857feada3161440d77ed1b7b2db890",
     "destinationSha256": "dd6075ab1f2394d8119fa8ac3660015fab78e3136e5d46e1228ec190c0917b07"
   },
   {
     "source": "/images/solutions/drive-in-racks/heroImage.jpg",
     "destination": "/images/solutions/drive-in-racks/heroImage.webp",
-    "sourceSha256": "8e0b5c4962797b50b73e15872f491af57aa25cac65db8615eaaeca9bdb13e4d8",
     "destinationSha256": "4c824af1b1096af29f9eafbb6ffe575bc4155540a90f312fab624737906cb807"
   },
   {
     "source": "/images/solutions/drive-in-racks/installImage.JPG",
     "destination": "/images/solutions/drive-in-racks/installImage.webp",
-    "sourceSha256": "bfabcfd974610e722f5627e595db80018b6fa6f230e2afd62337592e21753f2c",
     "destinationSha256": "abf2ac36240c071bec7e131c610af8f4ff29bfa60dae0923caa24bf5c6af9435"
   },
   {
     "source": "/images/solutions/drive-in-racks/productImage.jpg",
     "destination": "/images/solutions/drive-in-racks/productImage.webp",
-    "sourceSha256": "a4e8679522fdd7b4f4d67772ecfb7957b663ab0018b46aed514dd2b3a0073840",
     "destinationSha256": "e16436505904564dd1945738e9563befcf7bdc233cfe01729207f15e6ef3897b"
   },
   {
     "source": "/images/solutions/mezzanines/heroImage.jpg",
     "destination": "/images/solutions/mezzanines/heroImage.webp",
-    "sourceSha256": "cbc005574a6b278c8a8f3f82c3f663164837b298c61086dd9bc0b6c0bd77662d",
     "destinationSha256": "ca803877a2580bc784512fe559a87a546795bc4e9c07ccde4db6b7f9b5f54ff0"
   },
   {
     "source": "/images/solutions/mezzanines/installImage.jpg",
     "destination": "/images/solutions/mezzanines/installImage.webp",
-    "sourceSha256": "5b1b2e49776372a9b8f7239bbdf9c293b4f699205fc21724bc3050cc1516e1c2",
     "destinationSha256": "e9d04363f967c604c83c4ac3fab346b9b5eec532ec3c0cb5d2b6f96102d65692"
   },
   {
     "source": "/images/solutions/mezzanines/productImage.jpg",
     "destination": "/images/solutions/mezzanines/productImage.webp",
-    "sourceSha256": "af9aea4f3c60a91ec3379e3f312b6a649bde2e2a868b6a6e4528ce1004a82047",
     "destinationSha256": "7b736a7b61158794d1f77f36f9716ba3bf2c39941b9a38f5fe62009493f71a6d"
   },
   {
     "source": "/images/solutions/mobile-pallet-racking/heroImage.jpg",
     "destination": "/images/solutions/mobile-pallet-racking/heroImage.webp",
-    "sourceSha256": "69f4a0bb7a300a95eae646c4a199d7ac369ba5c5e151ad30ff629e419bb77050",
     "destinationSha256": "c63e59a71e963dfca36845234ebb3fdfc42a569760099d118806f11a31896885"
   },
   {
     "source": "/images/solutions/mobile-pallet-racking/productImage.jpg",
     "destination": "/images/solutions/mobile-pallet-racking/productImage.webp",
-    "sourceSha256": "a2e98176cd3a12def586ef0d019c6d97fac19045807cc4d7757c902feb70daaf",
     "destinationSha256": "f710aa22c093301e74d9e0a89866cedb9256ae1975e40e19a923d8e17413ac89"
   },
   {
     "source": "/images/solutions/pallet-flow-racks/heroImage.jpg",
     "destination": "/images/solutions/pallet-flow-racks/heroImage.webp",
-    "sourceSha256": "0fd7dbbe45a8986c0f391b03999a8e37a7ead509331f51d3ee425ee7505d4e6d",
     "destinationSha256": "cf0105fa4352aaa14f318728c2f60d6cf7513adc1b329aaf4d858d14c84708b6"
   },
   {
     "source": "/images/solutions/pallet-flow-racks/productImage.jpg",
     "destination": "/images/solutions/pallet-flow-racks/productImage.webp",
-    "sourceSha256": "77a3732f0969582a7fa4e47d211edd26d201714e92c8f3f23056b8b50d5a603f",
     "destinationSha256": "ce64c1da9b452ff414790fa12fe28dba9b1de966510da9783e44098be8628498"
   },
   {
     "source": "/images/solutions/pick-modules/installImage.jpg",
     "destination": "/images/solutions/pick-modules/installImage.webp",
-    "sourceSha256": "bce3fd0541c19b964aa65c246b473e1882dcdcd19e7ae8c0f74b5177d560806f",
     "destinationSha256": "7bad5bc32417dc17ac10328b9118424ce194e14c564f4fa28bcd92c03a6f9bbf"
   },
   {
     "source": "/images/solutions/pick-modules/productImage.jpg",
     "destination": "/images/solutions/pick-modules/productImage.webp",
-    "sourceSha256": "0ea03af35e50657444322689f37d50a04bc33c84faae65e290e0ad22c083ede8",
     "destinationSha256": "7ddec832d54ed1a799c3cc25ac086f48238456a3f131724e7fb4f20d2776db4c"
   },
   {
     "source": "/images/solutions/push-back-racking/diagramImage.jpg",
     "destination": "/images/solutions/push-back-racking/diagramImage.webp",
-    "sourceSha256": "9e79f87263c715b527a05fcec260ef3f83d09315802398c9da5e2ceabf1a21db",
     "destinationSha256": "09dd19a14e2eedfaf2efb380b29b52f6e905da15938c59d13c17f6af6f70c329"
   },
   {
     "source": "/images/solutions/push-back-racking/productImage.jpg",
     "destination": "/images/solutions/push-back-racking/productImage.webp",
-    "sourceSha256": "f7995d1f97f9f864afb327702452bb78c0a141bfbd83ffe78013ab610b928697",
     "destinationSha256": "18d37c517e0aff57b029d73fcdba841feaa0e0a4b8166ebedf2510dbd71c9371"
   },
   {
     "source": "/images/solutions/selective-pallet-racks/diagramImage.jpg",
     "destination": "/images/solutions/selective-pallet-racks/diagramImage.webp",
-    "sourceSha256": "ab88d7b08f80e5da8f84d46cf978a18ee402a9a36a835c1a78b1d17dd1ad230a",
     "destinationSha256": "eafd7cfa2af07f9dd5dd669494832bbbe4196113a2c1e02928c0f35bdc09c204"
   },
   {
     "source": "/images/solutions/selective-pallet-racks/heroImage.jpg",
     "destination": "/images/solutions/selective-pallet-racks/heroImage.webp",
-    "sourceSha256": "0825c0f129f3cfd1dab59491d269ea62efd177e223b2dd950d79283ad68ca7e0",
     "destinationSha256": "3fcee632a7da1b45adf99d04fdda6ca0203529164a4442a75e10537befe2ed5f"
   },
   {
     "source": "/images/solutions/selective-pallet-racks/installImage.jpg",
     "destination": "/images/solutions/selective-pallet-racks/installImage.webp",
-    "sourceSha256": "a95e121267630bb70aa441c9fe9a361c5c0b41e5a69a8697fa9f30c990ef109c",
     "destinationSha256": "28cdd21124ed257df6a1697af26dc17a92e537ae4d88e98dd94cc57f9f70a5ef"
   },
   {
     "source": "/images/solutions/shelving-systems/diagramImage.JPG",
     "destination": "/images/solutions/shelving-systems/diagramImage.webp",
-    "sourceSha256": "298c89e372b670ae3c893ca81af41af10fca96cf6e93287d43b9181d16b5daf2",
     "destinationSha256": "493029d7a65593c190a53faabad0737a31d41e6df8d4935a3c8691ea0615db1a"
   },
   {
     "source": "/images/solutions/shelving-systems/heroImage.jpg",
     "destination": "/images/solutions/shelving-systems/heroImage.webp",
-    "sourceSha256": "621106253460489b8e54b839844ab3b80cd29e5526d4575358ffb19251510ece",
     "destinationSha256": "07c93d455d61799ba6e1b4b64be5bf5710ba3dc908ec73219c486cc0c4dbde1f"
   },
   {
     "source": "/images/solutions/shelving-systems/installImage.JPG",
     "destination": "/images/solutions/shelving-systems/installImage.webp",
-    "sourceSha256": "ca65955ebe76c604e49f48f305c6af11a77188c818a1434cc1a1b00e53ba7f78",
     "destinationSha256": "7da9eeeecce3d7922944040fbb5b04603cdc9f74e4d226fe6055a6c0c7da2130"
   },
   {
     "source": "/images/solutions/shelving-systems/productImage.JPG",
     "destination": "/images/solutions/shelving-systems/productImage.webp",
-    "sourceSha256": "13ff761f681975c46f7caff7e0fb17c51a4870ecc507b7333c9d067263abfc3e",
     "destinationSha256": "10e233b27d04df73d31bfb606c34e300bc61bda5d6deb5d0793ff8579590630b"
   }
 ]

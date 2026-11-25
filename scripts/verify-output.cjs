@@ -60,6 +60,10 @@ async function verify() {
     }
   }
   await walk(root);
+  for (const [source, destination] of aliases) {
+    await assert.rejects(fs.access(path.join(output, source)), source + ': duplicate image was deployed');
+    if (requiredImages.has(destination)) await fs.access(path.join(output, destination));
+  }
   for (const name of ['.git', 'node_modules', 'scripts', 'work', 'outputs', 'package.json', 'package-lock.json', 'vercel.json', 'README.md', 'CLONE_NOTES.txt']) {
     await assert.rejects(fs.access(path.join(output, name)), name + ': private build file leaked');
   }

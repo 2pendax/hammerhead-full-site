@@ -23,12 +23,9 @@ async function loadImageAliases(root) {
     assert.ok(!aliases.has(source.slice(1)), 'Duplicate image alias: ' + source);
     assert.ok(rules.some(rule => isImageRewrite(rule) && rule.source === source && rule.destination === destination),
       'Missing exact image rewrite: ' + source);
-    for (const key of ['source', 'destination']) {
-      const bytes = await fs.readFile(path.join(root, entry[key].slice(1)));
-      const hash = createHash('sha256').update(bytes).digest('hex');
-      assert.equal(hash, entry[key + 'Sha256'], entry[key] +
-        ': image changed; review the replacement, then update or remove this alias and its rewrite');
-    }
+    const bytes = await fs.readFile(path.join(root, destination.slice(1)));
+    const hash = createHash('sha256').update(bytes).digest('hex');
+    assert.equal(hash, entry.destinationSha256, destination + ': reviewed WebP changed');
     aliases.set(source.slice(1), destination.slice(1));
   }
   return aliases;
