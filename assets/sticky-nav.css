@@ -11,8 +11,51 @@ header {
   box-shadow: 0 8px 24px rgb(8 18 35 / 16%);
 }
 
+header nav .nav-phone {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 9px 15px;
+  border: 1px solid #ff9b63;
+  border-radius: 999px;
+  background: #f36b21;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 5px 14px rgb(243 107 33 / 28%);
+}
+
+header nav .nav-phone:hover,
+header nav .nav-phone:focus-visible {
+  background: #ff7b32;
+  color: #fff;
+}
+
+.nav-phone-short {
+  display: none;
+}
+
 @media (max-width: 600px) {
   html {
     scroll-padding-top: 132px;
+  }
+
+  header nav .nav-phone {
+    padding: 7px 11px;
+  }
+
+  .nav-phone-full {
+    display: none;
+  }
+
+  .nav-phone-short {
+    display: inline;
+  }
+
+  header nav .cta {
+    display: none;
   }
 }
