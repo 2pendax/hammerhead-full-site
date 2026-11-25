@@ -1,0 +1,18 @@
+/* Keep the primary navigation visible while the page scrolls. */
+html {
+  scroll-padding-top: 96px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  isolation: isolate;
+  box-shadow: 0 8px 24px rgb(8 18 35 / 16%);
+}
+
+@media (max-width: 600px) {
+  html {
+    scroll-padding-top: 132px;
+  }
+}
