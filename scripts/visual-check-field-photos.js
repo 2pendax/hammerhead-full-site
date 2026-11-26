@@ -46,6 +46,9 @@ const server = http.createServer((request, response) => {
     await page.screenshot({ path: output, fullPage: true });
     if (item.name === 'home-desktop' || item.name === 'home-mobile') {
       await page.locator('.guide-card-grid').screenshot({ path: path.join(os.tmpdir(), `guide-cards-${item.name.endsWith('mobile') ? 'mobile' : 'desktop'}.png`) });
+      await page.locator('.site-footer').scrollIntoViewIfNeeded();
+      await page.waitForTimeout(150);
+      await page.locator('.site-footer').screenshot({ path: path.join(os.tmpdir(), `site-footer-${item.name.endsWith('mobile') ? 'mobile' : 'desktop'}.png`) });
     }
     results.push({ name: item.name, output, brokenImages: await page.locator('img').evaluateAll(images => images.filter(image => !image.complete || image.naturalWidth === 0).length), horizontalOverflow: await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth) });
     await page.close();
