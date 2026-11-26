@@ -613,6 +613,25 @@ header .nav-phone:focus-visible {
   text-shadow: 0 3px 18px rgb(0 0 0 / 32%);
 }
 
+.article-photo-hero {
+  position: relative;
+  overflow: hidden;
+  background-image: linear-gradient(90deg, rgb(12 25 48 / 95%) 0%, rgb(18 35 65 / 87%) 53%, rgb(18 35 65 / 50%) 100%), var(--article-hero-image) !important;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.article-photo-hero > .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.article-photo-hero h1,
+.article-photo-hero .lead,
+.article-photo-hero .meta {
+  text-shadow: 0 3px 18px rgb(0 0 0 / 32%);
+}
+
 .about-gallery-grid strong {
   margin-bottom: 5px;
   color: #172238;
@@ -871,6 +890,11 @@ header .nav-phone:focus-visible {
 
   .solution-photo-hero {
     background-image: linear-gradient(180deg, rgb(12 25 48 / 92%) 0%, rgb(18 35 65 / 84%) 100%), var(--solution-hero-image) !important;
+    background-position: center !important;
+  }
+
+  .article-photo-hero {
+    background-image: linear-gradient(180deg, rgb(12 25 48 / 92%) 0%, rgb(18 35 65 / 84%) 100%), var(--article-hero-image) !important;
     background-position: center !important;
   }
 

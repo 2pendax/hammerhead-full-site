@@ -27,6 +27,7 @@ const server = http.createServer((request, response) => {
     { name: 'solution-desktop', url: '/solutions/selective-pallet-racks/', width: 1440, height: 900 },
     { name: 'pushback-solution-desktop', url: '/solutions/push-back-racking/', width: 1440, height: 900 },
     { name: 'legacy-article-desktop', url: '/articles/fire-marshal-warehouse-inspection/', width: 1440, height: 900 },
+    { name: 'carton-flow-article-desktop', url: '/articles/carton-flow-rack-systems/', width: 1440, height: 900 },
     { name: 'contact-desktop', url: '/contact/', width: 1440, height: 900 },
     { name: 'about-desktop', url: '/about/', width: 1440, height: 1000 },
     { name: 'home-mobile', url: '/', width: 390, height: 1000 },
@@ -35,6 +36,7 @@ const server = http.createServer((request, response) => {
     ,{ name: 'pushback-solution-mobile', url: '/solutions/push-back-racking/', width: 390, height: 1000 }
     ,{ name: 'contact-mobile', url: '/contact/', width: 390, height: 1000 }
     ,{ name: 'about-mobile', url: '/about/', width: 390, height: 1000 }
+    ,{ name: 'carton-flow-article-mobile', url: '/articles/carton-flow-rack-systems/', width: 390, height: 1000 }
     ,{ name: 'catalog-mobile', url: '/racking-guides/', width: 390, height: 1000 }
   ]) {
     const page = await browser.newPage({ viewport: { width: item.width, height: item.height }, deviceScaleFactor: 1 });
