@@ -448,6 +448,33 @@ header .nav-phone:focus-visible {
   background: #f36b21;
 }
 
+.contact-content {
+  max-width: 1160px !important;
+}
+
+.contact-methods {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.contact-methods .card {
+  min-width: 0;
+}
+
+.contact-whatsapp-card {
+  border-top: 4px solid #25d366 !important;
+}
+
+.contact-whatsapp-card a {
+  color: #138a41;
+  font-weight: 700;
+}
+
+.contact-whatsapp-card small {
+  display: block;
+  margin-top: 5px;
+  color: #647386;
+}
+
 .project-process {
   position: relative;
   overflow: hidden;
@@ -596,6 +623,10 @@ header .nav-phone:focus-visible {
   .global-service-copy {
     max-width: 680px;
   }
+
+  .contact-methods {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 600px) {
@@ -662,6 +693,14 @@ header .nav-phone:focus-visible {
   .global-service-map figcaption {
     font-size: 11px;
     text-align: left;
+  }
+
+  .contact-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page .whatsapp-contact {
+    display: none;
   }
 
   .capabilities-panel {
