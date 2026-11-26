@@ -52,6 +52,9 @@ const server = http.createServer((request, response) => {
       await page.locator('.project-process').scrollIntoViewIfNeeded();
       await page.waitForTimeout(100);
       await page.locator('.project-process').screenshot({ path: path.join(os.tmpdir(), `project-process-${item.name.endsWith('mobile') ? 'mobile' : 'desktop'}.png`) });
+      await page.locator('.project-capabilities').scrollIntoViewIfNeeded();
+      await page.waitForTimeout(100);
+      await page.locator('.project-capabilities').screenshot({ path: path.join(os.tmpdir(), `project-capabilities-${item.name.endsWith('mobile') ? 'mobile' : 'desktop'}.png`) });
     }
     results.push({ name: item.name, output, brokenImages: await page.locator('img').evaluateAll(images => images.filter(image => !image.complete || image.naturalWidth === 0).length), horizontalOverflow: await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth) });
     await page.close();
