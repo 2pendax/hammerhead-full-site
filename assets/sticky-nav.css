@@ -475,6 +475,104 @@ header .nav-phone:focus-visible {
   color: #647386;
 }
 
+.about-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 550px;
+  padding: 105px 0 95px !important;
+  background-image: linear-gradient(90deg, rgb(12 25 48 / 94%) 0%, rgb(18 35 65 / 86%) 48%, rgb(18 35 65 / 45%) 100%), url('/images/field-projects/longspan-racking-10.webp') !important;
+  background-position: center 53% !important;
+  background-size: cover !important;
+}
+
+.about-hero .wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.about-hero h1 {
+  max-width: 850px;
+  text-shadow: 0 3px 18px rgb(0 0 0 / 30%);
+}
+
+.about-hero .wrap > p:first-child {
+  color: #ff9b63;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.about-project-gallery {
+  padding: 70px 0 76px;
+  background: #f3f6f9;
+}
+
+.about-gallery-heading {
+  max-width: 790px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.about-gallery-heading > span {
+  color: #b9470b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.about-gallery-heading h2 {
+  margin: 9px 0 12px;
+}
+
+.about-gallery-heading p {
+  margin: 0;
+  color: #526378;
+}
+
+.about-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.about-gallery-grid figure {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid #dbe3ea;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgb(8 18 35 / 7%);
+}
+
+.about-gallery-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.about-gallery-grid figcaption {
+  display: block;
+  padding: 18px 19px 20px;
+}
+
+.about-gallery-grid strong,
+.about-gallery-grid span {
+  display: block;
+}
+
+.about-gallery-grid strong {
+  margin-bottom: 5px;
+  color: #172238;
+  font-size: 18px;
+}
+
+.about-gallery-grid span {
+  color: #526378;
+  font-size: 14px;
+}
+
 .project-process {
   position: relative;
   overflow: hidden;
@@ -627,6 +725,16 @@ header .nav-phone:focus-visible {
   .contact-methods {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .about-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .about-gallery-grid figure:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 10px);
+    justify-self: center;
+  }
 }
 
 @media (max-width: 600px) {
@@ -701,6 +809,32 @@ header .nav-phone:focus-visible {
 
   .contact-page .whatsapp-contact {
     display: none;
+  }
+
+  .about-hero {
+    min-height: 500px;
+    padding: 72px 0 68px !important;
+    background-image: linear-gradient(180deg, rgb(12 25 48 / 88%) 0%, rgb(18 35 65 / 82%) 100%), url('/images/field-projects/longspan-racking-10.webp') !important;
+    background-position: 44% center !important;
+  }
+
+  .about-project-gallery {
+    padding: 52px 0 56px;
+  }
+
+  .about-gallery-heading {
+    text-align: left;
+  }
+
+  .about-gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .about-gallery-grid figure:last-child {
+    width: 100%;
+    max-width: none;
+    grid-column: auto;
   }
 
   .capabilities-panel {

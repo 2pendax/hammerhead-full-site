@@ -27,10 +27,12 @@ const server = http.createServer((request, response) => {
     { name: 'solution-desktop', url: '/solutions/selective-pallet-racks/', width: 1440, height: 900 },
     { name: 'legacy-article-desktop', url: '/articles/fire-marshal-warehouse-inspection/', width: 1440, height: 900 },
     { name: 'contact-desktop', url: '/contact/', width: 1440, height: 900 },
+    { name: 'about-desktop', url: '/about/', width: 1440, height: 1000 },
     { name: 'home-mobile', url: '/', width: 390, height: 1000 },
     { name: 'dropdown-mobile', url: '/', width: 390, height: 900, openDropdown: true },
     { name: 'guide-mobile', url: '/racking-guides/heavy-duty-pallet-racking/', width: 390, height: 1200 }
     ,{ name: 'contact-mobile', url: '/contact/', width: 390, height: 1000 }
+    ,{ name: 'about-mobile', url: '/about/', width: 390, height: 1000 }
     ,{ name: 'catalog-mobile', url: '/racking-guides/', width: 390, height: 1000 }
   ]) {
     const page = await browser.newPage({ viewport: { width: item.width, height: item.height }, deviceScaleFactor: 1 });
