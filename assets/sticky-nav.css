@@ -613,6 +613,60 @@ header .nav-phone:focus-visible {
   text-shadow: 0 3px 18px rgb(0 0 0 / 32%);
 }
 
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) {
+  gap: clamp(36px, 4vw, 58px) !important;
+  margin-bottom: 42px;
+  padding: clamp(38px, 4vw, 58px) clamp(32px, 4.5vw, 60px) !important;
+  border-radius: 16px;
+  box-shadow: 0 20px 46px rgb(12 25 48 / 15%);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) h1 {
+  color: #fff;
+  text-shadow: 0 3px 20px rgb(0 0 0 / 55%);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) .lead {
+  color: #eef4fb;
+  text-shadow: 0 2px 14px rgb(0 0 0 / 60%);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) .meta {
+  color: #d4dfeb;
+  text-shadow: 0 2px 12px rgb(0 0 0 / 65%);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) .eyebrow {
+  color: #ff8a48;
+  text-shadow: 0 3px 18px rgb(0 0 0 / 32%);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) > div:first-child {
+  max-width: 560px;
+  padding-left: clamp(4px, 1vw, 14px);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) figure {
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 24%);
+  border-radius: 13px;
+  background: rgb(7 18 37 / 88%);
+  box-shadow: 0 18px 38px rgb(0 0 0 / 26%);
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) figure img {
+  border-radius: 0;
+}
+
+.solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) figcaption {
+  margin: 0;
+  padding: 11px 14px 13px;
+  color: #f1f5fa;
+  background: rgb(7 18 37 / 94%);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .article-photo-hero {
   position: relative;
   overflow: hidden;
@@ -891,6 +945,17 @@ header .nav-phone:focus-visible {
   .solution-photo-hero {
     background-image: linear-gradient(180deg, rgb(12 25 48 / 92%) 0%, rgb(18 35 65 / 84%) 100%), var(--solution-hero-image) !important;
     background-position: center !important;
+  }
+
+  .solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) {
+    gap: 28px !important;
+    margin-bottom: 30px;
+    padding: 34px 24px !important;
+    border-radius: 12px;
+  }
+
+  .solution-photo-hero:is([style*="selective-pallet-racking-4.webp"], [style*="drive-in-warehouse-2.webp"], [style*="steel-mezzanine-1.webp"]) > div:first-child {
+    padding-left: 0;
   }
 
   .article-photo-hero {
