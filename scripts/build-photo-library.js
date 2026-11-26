@@ -30,6 +30,11 @@ async function main() {
   for (const [name, source] of Object.entries(photos)) {
     await sharp(path.join(sourceRoot, source)).rotate().resize({ width: 1600, height: 1100, fit: 'cover', position: 'attention' }).webp({ quality: 80, effort: 5 }).toFile(path.join(outputRoot, `${name}.webp`));
   }
-  console.log(JSON.stringify({ created: Object.keys(photos).length }));
+  await sharp(path.join(sourceRoot, '微信图片_20250724162856.jpg'))
+    .rotate()
+    .resize({ width: 1400, height: 1800, fit: 'cover', position: 'attention' })
+    .webp({ quality: 88, effort: 6 })
+    .toFile(path.join(outputRoot, 'project-support-racking-hd.webp'));
+  console.log(JSON.stringify({ created: Object.keys(photos).length + 1 }));
 }
 main().catch(error => { console.error(error); process.exitCode = 1; });
