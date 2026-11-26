@@ -7,6 +7,7 @@ const url = 'https://wa.me/8615069070069?text=Hello%2C%20I%20would%20like%20to%2
 const card = `<div class="card contact-whatsapp-card"><h3>WhatsApp</h3><a href="${url}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a><small>+86 150 6907 0069</small></div>`;
 
 html = html.replace('<body>', '<body class="contact-page">');
+html = html.replace('<section class="hero">', '<section class="hero contact-hero">');
 html = html.replace('<div class="wrap content"><div class="grid">', '<div class="wrap content contact-content"><div class="grid contact-methods">');
 if (!html.includes('contact-whatsapp-card')) {
   const guides = '<div class="card"><h3>Guides</h3><a href="/racking-guides/">Browse buying guides</a></div>';
