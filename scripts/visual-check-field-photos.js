@@ -25,12 +25,14 @@ const server = http.createServer((request, response) => {
     { name: 'guide-desktop', url: '/racking-guides/heavy-duty-pallet-racking/', width: 1440, height: 1300 },
     { name: 'catalog-desktop', url: '/racking-guides/', width: 1440, height: 1100 },
     { name: 'solution-desktop', url: '/solutions/selective-pallet-racks/', width: 1440, height: 900 },
+    { name: 'pushback-solution-desktop', url: '/solutions/push-back-racking/', width: 1440, height: 900 },
     { name: 'legacy-article-desktop', url: '/articles/fire-marshal-warehouse-inspection/', width: 1440, height: 900 },
     { name: 'contact-desktop', url: '/contact/', width: 1440, height: 900 },
     { name: 'about-desktop', url: '/about/', width: 1440, height: 1000 },
     { name: 'home-mobile', url: '/', width: 390, height: 1000 },
     { name: 'dropdown-mobile', url: '/', width: 390, height: 900, openDropdown: true },
     { name: 'guide-mobile', url: '/racking-guides/heavy-duty-pallet-racking/', width: 390, height: 1200 }
+    ,{ name: 'pushback-solution-mobile', url: '/solutions/push-back-racking/', width: 390, height: 1000 }
     ,{ name: 'contact-mobile', url: '/contact/', width: 390, height: 1000 }
     ,{ name: 'about-mobile', url: '/about/', width: 390, height: 1000 }
     ,{ name: 'catalog-mobile', url: '/racking-guides/', width: 390, height: 1000 }
