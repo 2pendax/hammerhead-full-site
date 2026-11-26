@@ -45,6 +45,11 @@ const server = http.createServer((request, response) => {
     const output = path.join(os.tmpdir(), `${item.name}.png`);
     await page.screenshot({ path: output, fullPage: true });
     if (item.name === 'home-desktop' || item.name === 'home-mobile') {
+      if (item.name === 'home-desktop' && await page.locator('.whatsapp-float').count()) {
+        await page.locator('.whatsapp-float').hover();
+        await page.waitForTimeout(120);
+        await page.screenshot({ path: path.join(os.tmpdir(), 'whatsapp-contact-desktop.png'), clip: { x: item.width - 330, y: item.height - 450, width: 330, height: 450 } });
+      }
       await page.locator('.guide-card-grid').screenshot({ path: path.join(os.tmpdir(), `guide-cards-${item.name.endsWith('mobile') ? 'mobile' : 'desktop'}.png`) });
       await page.locator('.site-footer').scrollIntoViewIfNeeded();
       await page.waitForTimeout(150);

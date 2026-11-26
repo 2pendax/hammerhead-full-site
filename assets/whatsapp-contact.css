@@ -1,0 +1,142 @@
+.whatsapp-contact {
+  position: fixed;
+  right: 22px;
+  bottom: 24px;
+  z-index: 90;
+  font-family: Inter, Arial, sans-serif;
+}
+
+.whatsapp-float {
+  display: inline-flex;
+  min-height: 54px;
+  padding: 11px 17px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: #25d366;
+  color: #fff;
+  align-items: center;
+  gap: 9px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 24%);
+  transition: transform .18s ease, background .18s ease;
+}
+
+.whatsapp-float:hover,
+.whatsapp-float:focus-visible {
+  background: #1db954;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+  display: inline-flex;
+  width: 27px;
+  height: 27px;
+}
+
+.whatsapp-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.whatsapp-card {
+  position: absolute;
+  right: 0;
+  bottom: 68px;
+  width: 270px;
+  padding: 18px;
+  border: 1px solid #dce5e1;
+  border-radius: 15px;
+  background: #fff;
+  color: #172238;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  box-shadow: 0 18px 46px rgb(8 18 35 / 22%);
+  transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.whatsapp-contact:hover .whatsapp-card,
+.whatsapp-contact:focus-within .whatsapp-card {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.whatsapp-card strong,
+.whatsapp-card span {
+  display: block;
+}
+
+.whatsapp-card strong {
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+.whatsapp-card > span {
+  color: #5b6878;
+  font-size: 13px;
+}
+
+.whatsapp-card img {
+  display: block;
+  width: 210px;
+  height: 210px;
+  margin: 12px auto 8px;
+  object-fit: contain;
+}
+
+.whatsapp-card small {
+  display: block;
+  margin-bottom: 11px;
+  color: #5b6878;
+}
+
+.whatsapp-card-link {
+  display: block;
+  padding: 10px 14px;
+  border-radius: 7px;
+  background: #25d366;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.whatsapp-card-link:hover,
+.whatsapp-card-link:focus-visible {
+  background: #1db954;
+  color: #fff;
+}
+
+.footer-whatsapp-link {
+  color: #57e389 !important;
+}
+
+@media (max-width: 700px) {
+  .whatsapp-contact {
+    right: 14px;
+    bottom: 16px;
+  }
+
+  .whatsapp-float {
+    min-height: 50px;
+    padding: 9px 13px;
+    font-size: 14px;
+  }
+
+  .whatsapp-card {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .whatsapp-float,
+  .whatsapp-card {
+    transition: none;
+  }
+}
