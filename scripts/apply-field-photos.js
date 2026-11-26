@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const root = path.resolve(__dirname, '..');
 const libraries = {
-  pallet: ['selective-pallet-racking-1','selective-pallet-racking-2','selective-pallet-racking-3','selective-pallet-racking-4'],
+  pallet: ['selective-pallet-racking-1','selective-pallet-racking-2','selective-pallet-racking-3','selective-pallet-racking-4','selective-pallet-racking-5','selective-pallet-racking-6','selective-pallet-racking-7','selective-pallet-racking-8','selective-pallet-racking-9','selective-pallet-racking-10'],
   dense: ['drive-in-warehouse-1','drive-in-warehouse-2','selective-pallet-racking-4'], mobile: ['mobile-pallet-racking-1','selective-pallet-racking-3'],
-  shelving: ['industrial-shelving-1','medium-duty-shelving-1','medium-duty-shelving-2'], longspan: ['longspan-racking-1','longspan-racking-2','medium-duty-shelving-1'],
+  shelving: ['industrial-shelving-1','medium-duty-shelving-1','medium-duty-shelving-2'], longspan: ['longspan-racking-1','longspan-racking-2','longspan-racking-3','longspan-racking-4','longspan-racking-5','longspan-racking-6','longspan-racking-7','longspan-racking-8','longspan-racking-9','longspan-racking-10','medium-duty-shelving-1'],
   flow: ['carton-flow-rack-1','longspan-racking-2'], stacking: ['stacking-rack-1','stacking-rack-2'], cantilever: ['cantilever-racking-1','cantilever-racking-2'],
   cable: ['cable-reel-racking-1','cable-reel-racking-2'], mezzanine: ['steel-mezzanine-1','steel-mezzanine-2','steel-mezzanine-3']
 };
@@ -31,4 +31,6 @@ for(const entry of fs.readdirSync(path.join(root,'racking-guides'),{withFileType
   s=s.replace('</div><div class="layout">',`</div>${gallery}<div class="layout">`);fs.writeFileSync(file,s,'utf8');updated++;
 }
 const home=path.join(root,'index.html');let h=fs.readFileSync(home,'utf8');if(!h.includes('home-hero'))h=h.replace('<section class="hero">','<section class="hero home-hero">');if(!h.includes('home-card-photo')){h=h.replace('<article class="card"><h3>Pallet racking</h3>',`<article class="card"><img class="home-card-photo" src="/images/field-projects/selective-pallet-racking-4.webp" width="1600" height="1100" loading="lazy" decoding="async" alt="Selective pallet racking installed in a warehouse"><h3>Pallet racking</h3>`).replace('<article class="card"><h3>Industrial shelving</h3>',`<article class="card"><img class="home-card-photo" src="/images/field-projects/longspan-racking-1.webp" width="1600" height="1100" loading="lazy" decoding="async" alt="Industrial longspan warehouse shelving"><h3>Industrial shelving</h3>`).replace('<article class="card"><h3>Mezzanine systems</h3>',`<article class="card"><img class="home-card-photo" src="/images/field-projects/steel-mezzanine-2.webp" width="1600" height="1100" loading="lazy" decoding="async" alt="Steel mezzanine platform installed in a warehouse"><h3>Mezzanine systems</h3>`)}fs.writeFileSync(home,h,'utf8');updated++;
+
+const catalog=path.join(root,'racking-guides','index.html');let catalogHtml=fs.readFileSync(catalog,'utf8');const categoryCounts={};catalogHtml=catalogHtml.replace(/(<article class="card"[^>]*><a href="\/racking-guides\/([^/]+)\/"><img)[^>]*(>)/g,(whole,prefix,slug,end)=>{const t=type(slug),lib=libraries[t],count=categoryCounts[t]||0;categoryCounts[t]=count+1;const photo=lib[count%lib.length],label=slug.replaceAll('-',' ');return`${prefix} src="/images/field-projects/${photo}.webp" width="1600" height="1100" loading="lazy" decoding="async" alt="${label} warehouse project photograph"${end}`});fs.writeFileSync(catalog,catalogHtml,'utf8');
 console.log(JSON.stringify({updated}));

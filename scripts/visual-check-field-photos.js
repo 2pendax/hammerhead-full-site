@@ -22,8 +22,10 @@ const server = http.createServer((request, response) => {
   for (const item of [
     { name: 'home-desktop', url: '/', width: 1440, height: 1100 },
     { name: 'guide-desktop', url: '/racking-guides/heavy-duty-pallet-racking/', width: 1440, height: 1300 },
+    { name: 'catalog-desktop', url: '/racking-guides/', width: 1440, height: 1100 },
     { name: 'home-mobile', url: '/', width: 390, height: 1000 },
     { name: 'guide-mobile', url: '/racking-guides/heavy-duty-pallet-racking/', width: 390, height: 1200 }
+    ,{ name: 'catalog-mobile', url: '/racking-guides/', width: 390, height: 1000 }
   ]) {
     const page = await browser.newPage({ viewport: { width: item.width, height: item.height }, deviceScaleFactor: 1 });
     await page.goto(`http://127.0.0.1:4178${item.url}`, { waitUntil: 'networkidle' });

@@ -16,6 +16,13 @@ const photos = {
   'cantilever-racking-2': '悬臂货架/微信图片_20260616141403_135_15.jpg', 'cable-reel-racking-1': '线缆货架/微信图片_20260616141404_136_15.jpg',
   'cable-reel-racking-2': '线缆货架/微信图片_20260709102337_1023_2.jpg', 'steel-mezzanine-1': '钢平台/微信图片_20250728153948.jpg',
   'steel-mezzanine-2': '钢平台/微信图片_20260831103840_1909_2.jpg', 'steel-mezzanine-3': '钢平台/原素材1225 (1).jpg'
+  ,'longspan-racking-3': '微信图片_20250724162350.jpg', 'longspan-racking-4': '微信图片_20250724162706.jpg'
+  ,'longspan-racking-5': '微信图片_20250724162712.jpg', 'longspan-racking-6': '微信图片_20250724162720.jpg'
+  ,'longspan-racking-7': '微信图片_20250724162754.jpg', 'longspan-racking-8': '微信图片_20250724162805.jpg'
+  ,'longspan-racking-9': '微信图片_20250724162833.jpg', 'longspan-racking-10': '微信图片_20250724162856.jpg'
+  ,'selective-pallet-racking-5': '微信图片_20260426195031_862_8.jpg', 'selective-pallet-racking-6': '微信图片_20260818155637_345_39.jpg'
+  ,'selective-pallet-racking-7': '微信图片_20260818155641_349_39.jpg', 'selective-pallet-racking-8': '微信图片_20260818155641_350_39.jpg'
+  ,'selective-pallet-racking-9': '微信图片_20260818155642_351_39.jpg', 'selective-pallet-racking-10': '微信图片_20260818155643_352_39.jpg'
 };
 
 async function main() {
