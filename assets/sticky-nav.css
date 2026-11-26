@@ -362,6 +362,92 @@ header .nav-phone:focus-visible {
   color: #172238;
 }
 
+.global-service {
+  padding: 78px 0;
+  background: #fff;
+}
+
+.global-service-layout {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(270px, .78fr) minmax(540px, 1.55fr);
+  gap: 55px;
+}
+
+.global-service-copy > span {
+  display: inline-block;
+  color: #b9470b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.global-service-copy > span::before {
+  content: '';
+  display: block;
+  width: 62px;
+  height: 5px;
+  margin-bottom: 20px;
+  background: #f36b21;
+}
+
+.global-service-copy h2 {
+  margin: 10px 0 16px;
+  color: #172238;
+  font-size: clamp(32px, 4vw, 48px);
+}
+
+.global-service-copy p {
+  margin: 0 0 17px;
+  color: #526378;
+}
+
+.global-service-copy strong {
+  display: block;
+  margin-bottom: 23px;
+  color: #172238;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.global-service-copy a {
+  display: inline-block;
+  color: #b9470b;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.global-service-copy a:hover,
+.global-service-copy a:focus-visible {
+  color: #f36b21;
+}
+
+.global-service-map {
+  margin: 0;
+}
+
+.global-service-map img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.global-service-map figcaption {
+  margin: 10px 6px 0;
+  color: #647386;
+  font-size: 12px;
+  text-align: right;
+}
+
+.global-service-map figcaption i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #f36b21;
+}
+
 .project-process {
   position: relative;
   overflow: hidden;
@@ -501,6 +587,15 @@ header .nav-phone:focus-visible {
     min-height: 360px;
     max-height: 470px;
   }
+
+  .global-service-layout {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .global-service-copy {
+    max-width: 680px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -545,6 +640,28 @@ header .nav-phone:focus-visible {
 
   .project-capabilities {
     padding: 52px 0;
+  }
+
+  .global-service {
+    padding: 54px 0;
+  }
+
+  .global-service-copy h2 {
+    font-size: 31px;
+  }
+
+  .global-service-copy > span::before {
+    margin-bottom: 15px;
+  }
+
+  .global-service-map {
+    margin-right: -8px;
+    margin-left: -8px;
+  }
+
+  .global-service-map figcaption {
+    font-size: 11px;
+    text-align: left;
   }
 
   .capabilities-panel {

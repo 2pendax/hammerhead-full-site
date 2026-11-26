@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 510" role="img" aria-labelledby="global-map-title global-map-desc">
+  <title id="global-map-title">zhengdarack global service regions</title>
+  <desc id="global-map-desc">A simplified world map with orange markers across the Americas, Europe, Russia, Southeast Asia, Australia, the Arabian region, West Asia and Africa. Markers illustrate major service regions rather than office locations.</desc>
+  <rect width="1000" height="510" rx="24" fill="#f5f7fa"/>
+  <g fill="#d8dee5" stroke="#fff" stroke-width="4" stroke-linejoin="round">
+    <path d="M64 118 105 79l69-29 78 8 54 31 25 43-22 23-48-5-22 21-28 9-14 35-35 12-20-22-24-5-18-28-33-13Z"/>
+    <path d="m191 232 45 18 33 42-5 47-23 46-11 64-27-20-12-51-29-37 2-48-20-33Z"/>
+    <path d="m401 91 43-30 47 11 21 28-10 28-38 3-20-18-31 10-23-13Z"/>
+    <path d="m424 151 56-19 46 24 35 55-5 56-33 24-22 77-35 24-30-34 9-57-27-33-13-68Z"/>
+    <path d="m501 98 58-50 99-15 118 19 92 44 38 57-36 23-54-4-39 20-43-9-32 26-52-3-34-33-59-7-30-34Z"/>
+    <path d="m639 210 43-12 37 19 18 31-22 20-28-10-22 19-26-21Z"/>
+    <path d="m738 248 30-18 27 19-13 28-31 2Z"/>
+    <path d="m788 246 31-21 30 21-11 37-28 3Z"/>
+    <path d="m840 344 56-17 42 33-6 45-46 25-51-28Z"/>
+    <path d="m938 418 22 11-8 24-24 5-8-17Z"/>
+    <path d="m350 62 26-37 29 12-10 47Z"/>
+  </g>
+  <g fill="#f36b21" stroke="#fff" stroke-width="4">
+    <circle cx="110" cy="153" r="10"><title>Western North America</title></circle>
+    <circle cx="167" cy="127" r="10"><title>Central North America</title></circle>
+    <circle cx="233" cy="138" r="10"><title>Eastern North America</title></circle>
+    <circle cx="218" cy="274" r="10"><title>South America</title></circle>
+    <circle cx="230" cy="356" r="10"><title>Southern South America</title></circle>
+    <circle cx="444" cy="107" r="10"><title>Western Europe</title></circle>
+    <circle cx="472" cy="94" r="10"><title>Central Europe</title></circle>
+    <circle cx="495" cy="119" r="10"><title>Southern Europe</title></circle>
+    <circle cx="531" cy="99" r="10"><title>Eastern Europe</title></circle>
+    <circle cx="624" cy="86" r="10"><title>Russia</title></circle>
+    <circle cx="694" cy="103" r="10"><title>Russia and Central Asia</title></circle>
+    <circle cx="562" cy="177" r="10"><title>West Asia</title></circle>
+    <circle cx="602" cy="210" r="10"><title>Arabian Region</title></circle>
+    <circle cx="474" cy="217" r="10"><title>North Africa</title></circle>
+    <circle cx="500" cy="283" r="10"><title>East Africa</title></circle>
+    <circle cx="470" cy="347" r="10"><title>Southern Africa</title></circle>
+    <circle cx="430" cy="273" r="10"><title>West Africa</title></circle>
+    <circle cx="760" cy="228" r="10"><title>Vietnam and Thailand</title></circle>
+    <circle cx="793" cy="260" r="10"><title>Malaysia and Singapore</title></circle>
+    <circle cx="820" cy="282" r="10"><title>Indonesia</title></circle>
+    <circle cx="837" cy="227" r="10"><title>Philippines</title></circle>
+    <circle cx="865" cy="369" r="10"><title>Western Australia</title></circle>
+    <circle cx="910" cy="390" r="10"><title>Eastern Australia</title></circle>
+  </g>
+  <g aria-label="Headquarters in Jinan, China">
+    <circle cx="725" cy="181" r="18" fill="#fff" stroke="#f36b21" stroke-width="5"/>
+    <circle cx="725" cy="181" r="8" fill="#f36b21"/>
+    <path d="M739 177h40" stroke="#f36b21" stroke-width="3"/>
+    <rect x="778" y="160" width="128" height="35" rx="17.5" fill="#172238"/>
+    <text x="842" y="183" fill="#fff" font-family="Arial,sans-serif" font-size="15" font-weight="700" text-anchor="middle">HQ · Jinan, China</text>
+  </g>
+</svg>
