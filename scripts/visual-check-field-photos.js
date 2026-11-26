@@ -33,12 +33,20 @@ const server = http.createServer((request, response) => {
   ]) {
     const page = await browser.newPage({ viewport: { width: item.width, height: item.height }, deviceScaleFactor: 1 });
     await page.goto(`http://127.0.0.1:4178${item.url}`, { waitUntil: 'networkidle' });
+    if (item.url === '/' && await page.locator('.guide-card-grid').count()) {
+      await page.locator('.guide-card-grid').scrollIntoViewIfNeeded();
+      await page.waitForTimeout(300);
+      await page.evaluate(() => scrollTo(0, 0));
+    }
     if (item.openDropdown) {
       await page.locator('.solutions-trigger').click();
       await page.waitForTimeout(250);
     }
     const output = path.join(os.tmpdir(), `${item.name}.png`);
     await page.screenshot({ path: output, fullPage: true });
+    if (item.name === 'home-desktop' || item.name === 'home-mobile') {
+      await page.locator('.guide-card-grid').screenshot({ path: path.join(os.tmpdir(), `guide-cards-${item.name.endsWith('mobile') ? 'mobile' : 'desktop'}.png`) });
+    }
     results.push({ name: item.name, output, brokenImages: await page.locator('img').evaluateAll(images => images.filter(image => !image.complete || image.naturalWidth === 0).length), horizontalOverflow: await page.evaluate(() => document.documentElement.scrollWidth > document.documentElement.clientWidth) });
     await page.close();
   }
