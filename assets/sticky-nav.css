@@ -262,9 +262,135 @@ header .nav-phone:focus-visible {
   font-weight: 700;
 }
 
+.project-process {
+  position: relative;
+  overflow: hidden;
+  padding: 74px 0;
+  background-color: #edf3f8;
+  background-image: radial-gradient(circle at 20% 20%, rgb(255 255 255 / 80%) 0 2px, transparent 3px), radial-gradient(circle at 80% 70%, rgb(255 255 255 / 72%) 0 2px, transparent 3px);
+  background-size: 46px 46px, 58px 58px;
+}
+
+.process-heading {
+  max-width: 780px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.process-heading > span {
+  color: #b9470b;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.process-heading h2 {
+  margin: 10px 0 14px;
+}
+
+.process-heading p {
+  margin: 0;
+  color: #526378;
+  font-size: 17px;
+}
+
+.process-steps {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.process-steps::before {
+  content: '';
+  position: absolute;
+  top: 36px;
+  right: 8%;
+  left: 8%;
+  z-index: -1;
+  height: 2px;
+  background: #f36b21;
+}
+
+.process-step {
+  min-width: 0;
+  padding: 28px 21px 25px;
+  border: 1px solid #e0e7ee;
+  border-radius: 12px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 10px 26px rgb(8 18 35 / 8%);
+}
+
+.process-step b {
+  display: inline-flex;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 19px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  background: #f36b21;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  box-shadow: 0 0 0 1px #f36b21;
+}
+
+.process-step h3 {
+  min-height: 54px;
+  margin: 0 0 12px;
+  color: #172238;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.process-step p {
+  margin: 0;
+  color: #526378;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.process-action {
+  margin: 34px 0 0;
+  text-align: center;
+}
+
+.process-action a {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 7px;
+  background: #172238;
+  color: #fff;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.process-action a:hover,
+.process-action a:focus-visible {
+  background: #f36b21;
+  color: #fff;
+}
+
 @media (max-width: 900px) {
   .guide-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .process-steps::before {
+    display: none;
+  }
+
+  .process-step:last-child {
+    grid-column: 1 / -1;
+    max-width: calc(50% - 9px);
+    justify-self: center;
   }
 }
 
@@ -302,6 +428,54 @@ header .nav-phone:focus-visible {
   .guide-card small {
     padding: 4px 12px 13px;
     font-size: 12px;
+  }
+
+  .project-process {
+    padding: 54px 0;
+  }
+
+  .process-heading {
+    margin-bottom: 28px;
+    text-align: left;
+  }
+
+  .process-heading p {
+    font-size: 15px;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .process-step,
+  .process-step:last-child {
+    display: grid;
+    width: 100%;
+    max-width: none;
+    padding: 21px;
+    grid-template-columns: 48px minmax(0, 1fr);
+    grid-column: auto;
+    column-gap: 15px;
+    text-align: left;
+  }
+
+  .process-step b {
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    grid-row: 1 / span 2;
+    font-size: 17px;
+  }
+
+  .process-step h3 {
+    min-height: 0;
+    margin-bottom: 6px;
+    font-size: 17px;
+  }
+
+  .process-step p {
+    font-size: 13px;
   }
 
   .global-nav {
